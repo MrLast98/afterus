@@ -6,3 +6,14 @@
 //
 
 import Foundation
+import SwiftUI
+
+struct OrganizerView: View {
+    var body: some View {
+        Text("naggiamaronn2")
+        //NavigationView {
+        //    VStack{
+        //    }
+        //}
+    }
+}

@@ -37,19 +37,19 @@ struct ContentView: View {
 //            }
 //            Text("Select an item")
 //        }
+
         TabView {
-            NavigationView() {
-                NavigationLink("Journal", destination: JournalView())
-            }.tabItem {
-                Image(systemName: "brain")
-                Text("Journal")
-            }
-            Text("Here it goes Organizer")
+            JournalView()
+                .tabItem {
+                    Image(systemName: "brain")
+                    Text("Journal")
+                }
+            OrganizerView()
                 .tabItem {
                         Image(systemName: "calendar")
                         Text("Organizer")
                     }
-            Text("Here it goes Infopoint")
+            InfopointView()
                     .tabItem {
                         Image(systemName: "book.closed.fill")
                         Text("Infopoint")

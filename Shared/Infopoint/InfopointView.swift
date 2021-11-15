@@ -6,3 +6,14 @@
 //
 
 import Foundation
+import SwiftUI
+
+struct InfopointView: View {
+    var body: some View {
+        Text("naggiamaronn3")
+        //NavigationView {
+        //    VStack{
+        //    }
+        //}
+    }
+}

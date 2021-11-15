@@ -9,26 +9,43 @@ import Foundation
 import SwiftUI
 
 
-struct Infopointview: View {
+struct InfopointView: View {
     var body: some View {
-        
-   
-                Image("immagineDoc")
                    
             
         
         
         VStack {
             
+            Image("immagineDoc")
+                .renderingMode(.original)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .offset(x: 5,y: 260)
+                .frame(width: 330.0, height: 330.0)
+            
+
+            Text("DOCUMENTS")
+                .font(.largeTitle)
+                .fontWeight(.heavy)
+                .foregroundColor(Color.black)
+                
+            
+                
+            
+                
+                
+                
+                
        
             
             
-            Text("DOCUMENTS")
-                .font(.headline)
-                .fontWeight(.heavy)
-                .foregroundColor(Color.black)
+
+                
             
         }
+        
+       
         
         
     }

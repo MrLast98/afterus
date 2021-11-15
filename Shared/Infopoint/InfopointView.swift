@@ -6,3 +6,33 @@
 //
 
 import Foundation
+import SwiftUI
+
+
+struct Infopointview: View {
+    var body: some View {
+        
+   
+                Image("immagineDoc")
+                   
+            
+        
+        
+        VStack {
+            
+       
+            
+            
+            Text("DOCUMENTS")
+                .font(.headline)
+                .fontWeight(.heavy)
+                .foregroundColor(Color.black)
+            
+        }
+        
+        
+    }
+        
+        
+    }
+

@@ -8,6 +8,9 @@
 import Foundation
 import SwiftUI
 
+
+
+
 struct JournalView: View {
     var body: some View {
         NavigationView {
@@ -15,14 +18,20 @@ struct JournalView: View {
                 Spacer()
                 NavigationLink(destination: NewNoteView()) {
                     makeButtonView(title: "New note")
+                        .background(Color(uiColor: .init(red: 224 / 255, green: 153 / 255, blue: 121 / 255, alpha: 1)))
+                        .cornerRadius(14)
                 }
                 Spacer()
                 NavigationLink(destination: HistoryView()) {
                     makeButtonView(title: "History")
+                        .background(Color(uiColor: .init(red: 224 / 255, green: 153 / 255, blue: 121 / 255, alpha: 1)))
+                        .cornerRadius(14)
                 }
                 Spacer()
                 NavigationLink(destination: CheckView()) {
                     makeButtonView(title: "Check")
+                        .background(Color(uiColor: .init(red: 224 / 255, green: 153 / 255, blue: 121 / 255, alpha: 1)))
+                        .cornerRadius(14)
                 }
                 Spacer()
                 HStack{
@@ -55,6 +64,6 @@ func makeButtonView(title: String) -> some View {
         .padding()
         .frame(maxWidth: .infinity, minHeight: 60)
         .foregroundColor(.black)
-        .background(Color(uiColor: .init(red: 224 / 255, green: 153 / 255, blue: 121 / 255, alpha: 1)))
-        .cornerRadius(14)
+        //.background(Color(uiColor: .init(red: 224 / 255, green: 153 / 255, blue: 121 / 255, alpha: 1)))
+//        .cornerRadius(14)
 }

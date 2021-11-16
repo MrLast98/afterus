@@ -6,4 +6,14 @@
 //
 
 import Foundation
+import SwiftUI
+
+struct Data {
+    var body: some View {
+        
+        Text("")
+        
+        
+    }
+}
 

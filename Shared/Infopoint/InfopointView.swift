@@ -23,7 +23,7 @@ struct InfopointView: View {
                         .cornerRadius(14)
                 }
                 Spacer()
-                NavigationLink(destination: HistoryView()) {
+                NavigationLink(destination: LawyersView()) {
                     makeButtonView(title: "Lawyers")
                         .background(Color(uiColor: .init(red: 195 / 255, green: 166 / 255, blue: 224 / 255, alpha: 0.80)))
                         .cornerRadius(14)

@@ -21,8 +21,10 @@
 		0BB554A1273E76CA00ACAEDE /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB5549F273E76CA00ACAEDE /* JournalView.swift */; };
 		0BB554A6273E7B8E00ACAEDE /* OrganizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB554A5273E7B8E00ACAEDE /* OrganizerView.swift */; };
 		0BB554A7273E7B8E00ACAEDE /* OrganizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB554A5273E7B8E00ACAEDE /* OrganizerView.swift */; };
-		0BB554A9273E7B9C00ACAEDE /* InfopointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB554A8273E7B9C00ACAEDE /* InfopointView.swift */; };
-		0BB554AA273E7B9C00ACAEDE /* InfopointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB554A8273E7B9C00ACAEDE /* InfopointView.swift */; };
+		66B4C5F52743C6E200C0FBE8 /* InfopointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B4C5F42743C6E200C0FBE8 /* InfopointView.swift */; };
+		66B4C5F62743C6E200C0FBE8 /* InfopointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B4C5F42743C6E200C0FBE8 /* InfopointView.swift */; };
+		66B4C5F82743CC2D00C0FBE8 /* DoctorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B4C5F72743CC2D00C0FBE8 /* DoctorsView.swift */; };
+		66B4C5F92743CC2D00C0FBE8 /* DoctorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B4C5F72743CC2D00C0FBE8 /* DoctorsView.swift */; };
 		68F3973527427E080096A8A1 /* NewNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F3973427427E080096A8A1 /* NewNoteView.swift */; };
 		68F3973627427E080096A8A1 /* NewNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F3973427427E080096A8A1 /* NewNoteView.swift */; };
 		68F397382742A8490096A8A1 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F397372742A8490096A8A1 /* HistoryView.swift */; };
@@ -44,7 +46,8 @@
 		0BB5548C273E6FF900ACAEDE /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		0BB5549F273E76CA00ACAEDE /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
 		0BB554A5273E7B8E00ACAEDE /* OrganizerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizerView.swift; sourceTree = "<group>"; };
-		0BB554A8273E7B9C00ACAEDE /* InfopointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfopointView.swift; sourceTree = "<group>"; };
+		66B4C5F42743C6E200C0FBE8 /* InfopointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfopointView.swift; sourceTree = "<group>"; };
+		66B4C5F72743CC2D00C0FBE8 /* DoctorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorsView.swift; sourceTree = "<group>"; };
 		68F3973427427E080096A8A1 /* NewNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteView.swift; sourceTree = "<group>"; };
 		68F397372742A8490096A8A1 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		68F3973A2742A8580096A8A1 /* CheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckView.swift; sourceTree = "<group>"; };
@@ -133,7 +136,8 @@
 		0BB554A4273E770900ACAEDE /* Infopoint */ = {
 			isa = PBXGroup;
 			children = (
-				0BB554A8273E7B9C00ACAEDE /* InfopointView.swift */,
+				66B4C5F42743C6E200C0FBE8 /* InfopointView.swift */,
+				66B4C5F72743CC2D00C0FBE8 /* DoctorsView.swift */,
 			);
 			path = Infopoint;
 			sourceTree = "<group>";
@@ -238,15 +242,16 @@
 			files = (
 				0BB554A6273E7B8E00ACAEDE /* OrganizerView.swift in Sources */,
 				0BB5548F273E6FF900ACAEDE /* afterusApp.swift in Sources */,
+				66B4C5F52743C6E200C0FBE8 /* InfopointView.swift in Sources */,
 				0BB554A0273E76CA00ACAEDE /* JournalView.swift in Sources */,
 				0BB55493273E6FF900ACAEDE /* Persistence.swift in Sources */,
 				0BB5548D273E6FF900ACAEDE /* afterus.xcdatamodeld in Sources */,
 				0BB55491273E6FF900ACAEDE /* ContentView.swift in Sources */,
-				0BB554A9273E7B9C00ACAEDE /* InfopointView.swift in Sources */,
 				68F397382742A8490096A8A1 /* HistoryView.swift in Sources */,
 				68F3973527427E080096A8A1 /* NewNoteView.swift in Sources */,
 				68F3973E2742AB780096A8A1 /* ProfileView.swift in Sources */,
 				68F3973B2742A8580096A8A1 /* CheckView.swift in Sources */,
+				66B4C5F82743CC2D00C0FBE8 /* DoctorsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,15 +261,16 @@
 			files = (
 				0BB554A7273E7B8E00ACAEDE /* OrganizerView.swift in Sources */,
 				0BB55490273E6FF900ACAEDE /* afterusApp.swift in Sources */,
+				66B4C5F62743C6E200C0FBE8 /* InfopointView.swift in Sources */,
 				0BB554A1273E76CA00ACAEDE /* JournalView.swift in Sources */,
 				0BB55494273E6FF900ACAEDE /* Persistence.swift in Sources */,
 				0BB5548E273E6FF900ACAEDE /* afterus.xcdatamodeld in Sources */,
 				0BB55492273E6FF900ACAEDE /* ContentView.swift in Sources */,
-				0BB554AA273E7B9C00ACAEDE /* InfopointView.swift in Sources */,
 				68F397392742A8490096A8A1 /* HistoryView.swift in Sources */,
 				68F3973627427E080096A8A1 /* NewNoteView.swift in Sources */,
 				68F3973F2742AB780096A8A1 /* ProfileView.swift in Sources */,
 				68F3973C2742A8580096A8A1 /* CheckView.swift in Sources */,
+				66B4C5F92743CC2D00C0FBE8 /* DoctorsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

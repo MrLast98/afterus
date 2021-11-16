@@ -17,19 +17,21 @@ struct InfopointView: View {
         
         VStack {
             
-            Image("immagineDoc")
-                .renderingMode(.original)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .offset(x: 5,y: 260)
-                .frame(width: 330.0, height: 330.0)
-            
-
             Text("DOCUMENTS")
                 .font(.largeTitle)
                 .fontWeight(.heavy)
                 .foregroundColor(Color.black)
-                
+                .frame(alignment: .top)
+            
+            Image("immagineDoc")
+                .renderingMode(.original)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .offset(x: 10,y: 240)
+                .frame(width: 330.0, height: 330.0)
+            
+
+          
             
                 
             

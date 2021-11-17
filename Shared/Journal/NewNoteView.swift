@@ -10,7 +10,7 @@ import SwiftUI
 
 
 struct NewNoteView: View{
-    @State private var testo = ""
+    @State private var testo = "write"
     @State private var testo1 = ""
     @State private var testo2 = ""
     @State private var search = ""
@@ -20,9 +20,9 @@ struct NewNoteView: View{
         NavigationView{
             VStack{
                 Text(" \(search)")
-                .searchable(text: $search)
-                .navigationTitle("NEW NOTE")
-                .padding()
+                    .searchable(text: $search)
+                    .navigationTitle("NEW NOTE")
+                    .padding()
                 VStack{
                     TextField("Enter your surname", text: $testo2)
                         .padding([.top, .leading, .trailing], 15.0)
@@ -66,11 +66,11 @@ struct NewNoteView: View{
                 }
                 
             }
-           
+            
         }
-       
-    }
         
+    }
+    
 }
 
 struct NewNoteView_Previews: PreviewProvider {
@@ -79,11 +79,11 @@ struct NewNoteView_Previews: PreviewProvider {
         
     }
 }
-
-struct TextEditingView: View {
-    @State private var fullText: String = "Write here your feelings about today..."
-
-    var body: some View {
-        TextEditor(text: $fullText)
-    }
-}
+//
+//struct TextEditingView: View {
+//    @State private var fullText: String = "Write here your feelings about today..."
+//
+//    var body: some View {
+//        TextEditor(text: $fullText)
+//    }
+//}

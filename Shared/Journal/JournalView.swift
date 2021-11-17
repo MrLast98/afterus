@@ -8,19 +8,11 @@
 import Foundation
 import SwiftUI
 
-func makeButtonView(title: String) -> some View {
-    Text(title)
-        .bold()
-        .padding()
-        .frame(maxWidth: .infinity, minHeight: 60)
-        .foregroundColor(.black)
-//        .background(Color(uiColor: .init(red: 224 / 255, green: 153 / 255, blue: 121 / 255, alpha: 1)))
-//        .cornerRadius(14)
-}
+
+
+
 struct JournalView: View {
-
     var body: some View {
-
         NavigationView {
             VStack {
                 Spacer()
@@ -50,18 +42,35 @@ struct JournalView: View {
             }
             .padding(.horizontal)
             .navigationTitle("JOURNAL")
-
+            
             .toolbar{
                 Button {
                 } label: {
                     NavigationLink(destination: ProfileView()){
                         Image(systemName:"person.crop.circle")
                     }
-
+                    
                 }
             }
         }
     }
+    
 }
 
 
+func makeButtonView(title: String) -> some View {
+    Text(title)
+        .bold()
+        .padding()
+        .frame(maxWidth: .infinity, minHeight: 60)
+        .foregroundColor(.black)
+    //.background(Color(uiColor: .init(red: 224 / 255, green: 153 / 255, blue: 121 / 255, alpha: 1)))
+    //        .cornerRadius(14)
+}
+
+struct JournalView_Previews: PreviewProvider {
+    static var previews: some View {
+        JournalView()
+        
+    }
+}

@@ -46,7 +46,8 @@ struct ContentView: View {
                 }
             OrganizerView()
                 .tabItem {
-                        Image(systemName: "calendar")
+                    Image(systemName: "calendar")
+                        
                         Text("Organizer")
                     }
             InfopointView()

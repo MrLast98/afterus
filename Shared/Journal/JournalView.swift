@@ -1,4 +1,4 @@
-//
+
 //  JournalView.swift
 //  afterus
 //
@@ -64,6 +64,13 @@ func makeButtonView(title: String) -> some View {
         .padding()
         .frame(maxWidth: .infinity, minHeight: 60)
         .foregroundColor(.black)
-        //.background(Color(uiColor: .init(red: 224 / 255, green: 153 / 255, blue: 121 / 255, alpha: 1)))
-//        .cornerRadius(14)
+    //.background(Color(uiColor: .init(red: 224 / 255, green: 153 / 255, blue: 121 / 255, alpha: 1)))
+    //        .cornerRadius(14)
+}
+
+struct JournalView_Previews: PreviewProvider {
+    static var previews: some View {
+        JournalView()
+        
+    }
 }

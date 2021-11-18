@@ -55,6 +55,7 @@ struct ContentView: View {
                         Image(systemName: "book.closed.fill")
                         Text("Infopoint")
                     }
+            
         }
     }
 }
@@ -64,3 +65,6 @@ struct ContentView_Previews: PreviewProvider {
         ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }
+
+
+

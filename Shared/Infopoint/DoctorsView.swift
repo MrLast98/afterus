@@ -57,6 +57,19 @@ struct DoctorsView: View {
 
                 }
             }
+        
+        ScrollView {
+            VStack(spacing: 10) {
+                ForEach(1..<15) {
+                    Text("Doctor \($0)")
+                        .foregroundColor(.white)
+                        .font(.largeTitle)
+                        .frame(width: 300, height: 60)
+                        .background(Color(uiColor: .init(red: 195 / 255, green: 166 / 255, blue: 224 / 255, alpha: 0.80)))
+                        .cornerRadius(14)
+                }
+            }
+        }
     
      
             
@@ -72,10 +85,10 @@ struct DoctorsView: View {
                     
                     .foregroundColor(Color.black)
                     .searchable(text: $searchText)
-                .navigationTitle("Search for a Doctor ")
-                 List(doctor) {
-                    Text($0.name)
-                }
+                .navigationTitle("Search for a Doctor")
+//                 List(lawyers) {
+//                    Text($0.name)
+//                }
                 
             
             
@@ -86,4 +99,3 @@ struct DoctorsView: View {
 
 
 }
-

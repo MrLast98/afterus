@@ -19,12 +19,14 @@ struct ProfileView: View{
 
                     HStack{
                         Button(action: {}) {
+                            NavigationLink(destination: MapsView()) {
                             Text("TUTORIAL")
                                 .font(.title2)
                                 .bold()
                                 .foregroundColor(.myColor1)
                             
                         }.padding(.horizontal)
+                        }
                     
                         
                         Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {

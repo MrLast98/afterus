@@ -9,11 +9,15 @@ import Foundation
 import SwiftUI
 
 struct OrganizerView: View {
+    
+    //struct nvStyle : NavigationViewStyle {
+    //}
+    
     var body: some View {
-        Text("naggiamaronn2")
-        //NavigationView {
-        //    VStack{
-        //    }
-        //}
+        NavigationView {
+            Text("BIOPARCO")
+                .navigationTitle("Organizer")
+                .navigationBarTitleDisplayMode(.inline)
+        }
     }
 }

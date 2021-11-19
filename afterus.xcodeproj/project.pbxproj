@@ -29,6 +29,14 @@
 		66B4C5F92743CC2D00C0FBE8 /* DoctorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B4C5F72743CC2D00C0FBE8 /* DoctorsView.swift */; };
 		66B4C5FE27440DFB00C0FBE8 /* LawyersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B4C5FD27440DFB00C0FBE8 /* LawyersView.swift */; };
 		66B4C5FF27440DFB00C0FBE8 /* LawyersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B4C5FD27440DFB00C0FBE8 /* LawyersView.swift */; };
+		66E5982E2747AF0200259E3F /* AssociationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E5982A2747AF0200259E3F /* AssociationsView.swift */; };
+		66E5982F2747AF0200259E3F /* AssociationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E5982A2747AF0200259E3F /* AssociationsView.swift */; };
+		66E598302747AF0200259E3F /* DataDoctors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E5982B2747AF0200259E3F /* DataDoctors.swift */; };
+		66E598312747AF0200259E3F /* DataDoctors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E5982B2747AF0200259E3F /* DataDoctors.swift */; };
+		66E598322747AF0200259E3F /* Tutorial in Resources */ = {isa = PBXBuildFile; fileRef = 66E5982C2747AF0200259E3F /* Tutorial */; };
+		66E598332747AF0200259E3F /* Tutorial in Resources */ = {isa = PBXBuildFile; fileRef = 66E5982C2747AF0200259E3F /* Tutorial */; };
+		66E598342747AF0200259E3F /* MedicalServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E5982D2747AF0200259E3F /* MedicalServicesView.swift */; };
+		66E598352747AF0200259E3F /* MedicalServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E5982D2747AF0200259E3F /* MedicalServicesView.swift */; };
 		6804078C27465E230085351B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6804078B27465E230085351B /* SettingsView.swift */; };
 		6804078D27465E230085351B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6804078B27465E230085351B /* SettingsView.swift */; };
 		68F3973527427E080096A8A1 /* NewNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F3973427427E080096A8A1 /* NewNoteView.swift */; };
@@ -54,6 +62,10 @@
 		66B4C5F42743C6E200C0FBE8 /* InfopointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfopointView.swift; sourceTree = "<group>"; };
 		66B4C5F72743CC2D00C0FBE8 /* DoctorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorsView.swift; sourceTree = "<group>"; };
 		66B4C5FD27440DFB00C0FBE8 /* LawyersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawyersView.swift; sourceTree = "<group>"; };
+		66E5982A2747AF0200259E3F /* AssociationsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssociationsView.swift; sourceTree = "<group>"; };
+		66E5982B2747AF0200259E3F /* DataDoctors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataDoctors.swift; sourceTree = "<group>"; };
+		66E5982C2747AF0200259E3F /* Tutorial */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Tutorial; sourceTree = "<group>"; };
+		66E5982D2747AF0200259E3F /* MedicalServicesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicalServicesView.swift; sourceTree = "<group>"; };
 		6804078B27465E230085351B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		68F3973427427E080096A8A1 /* NewNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteView.swift; sourceTree = "<group>"; };
 		68F397372742A8490096A8A1 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
@@ -143,11 +155,13 @@
 		0BB554A4273E770900ACAEDE /* Infopoint */ = {
 			isa = PBXGroup;
 			children = (
-				66B4C5F42743C6E200C0FBE8 /* InfopointView.swift */,
-				66FB9C362746685A002A3A21 /* MedicalServicesView.swift */,
-				66FB9C332746684C002A3A21 /* AssociationsView.swift */,
-				66B4C5FD27440DFB00C0FBE8 /* LawyersView.swift */,
+				66E5982A2747AF0200259E3F /* AssociationsView.swift */,
+				66E5982B2747AF0200259E3F /* DataDoctors.swift */,
 				66B4C5F72743CC2D00C0FBE8 /* DoctorsView.swift */,
+				66B4C5FD27440DFB00C0FBE8 /* LawyersView.swift */,
+				66E5982D2747AF0200259E3F /* MedicalServicesView.swift */,
+				66B4C5F42743C6E200C0FBE8 /* InfopointView.swift */,
+				66E5982C2747AF0200259E3F /* Tutorial */,
 				66FB9C3B2746A035002A3A21 /* Tutorial */,
 			);
 			path = Infopoint;
@@ -156,7 +170,6 @@
 		66FB9C3B2746A035002A3A21 /* Tutorial */ = {
 			isa = PBXGroup;
 			children = (
-				66FB9C3C2746A0A2002A3A21 /* TutorialView.swift */,
 			);
 			path = Tutorial;
 			sourceTree = "<group>";
@@ -240,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66E598322747AF0200259E3F /* Tutorial in Resources */,
 				0BB55495273E6FF900ACAEDE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66E598332747AF0200259E3F /* Tutorial in Resources */,
 				0BB55496273E6FF900ACAEDE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,20 +275,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				6804078C27465E230085351B /* SettingsView.swift in Sources */,
+				66E5982E2747AF0200259E3F /* AssociationsView.swift in Sources */,
+				66E598342747AF0200259E3F /* MedicalServicesView.swift in Sources */,
 				0BB554A6273E7B8E00ACAEDE /* OrganizerView.swift in Sources */,
 				0BB5548F273E6FF900ACAEDE /* afterusApp.swift in Sources */,
+				66E598302747AF0200259E3F /* DataDoctors.swift in Sources */,
 				66B4C5F52743C6E200C0FBE8 /* InfopointView.swift in Sources */,
-				66FB9C372746685A002A3A21 /* MedicalServicesView.swift in Sources */,
 				0BB554A0273E76CA00ACAEDE /* JournalView.swift in Sources */,
 				0BB55493273E6FF900ACAEDE /* Persistence.swift in Sources */,
 				66B4C5FE27440DFB00C0FBE8 /* LawyersView.swift in Sources */,
 				0B892B5B2746AAF600B4B746 /* PieChartData.swift in Sources */,
 				0BB5548D273E6FF900ACAEDE /* afterus.xcdatamodeld in Sources */,
 				0BB55491273E6FF900ACAEDE /* ContentView.swift in Sources */,
-				66FB9C342746684C002A3A21 /* AssociationsView.swift in Sources */,
 				68F397382742A8490096A8A1 /* HistoryView.swift in Sources */,
 				68F3973527427E080096A8A1 /* NewNoteView.swift in Sources */,
-				66FB9C3D2746A0A2002A3A21 /* TutorialView.swift in Sources */,
 				68F3973E2742AB780096A8A1 /* ProfileView.swift in Sources */,
 				66B4C5F82743CC2D00C0FBE8 /* DoctorsView.swift in Sources */,
 			);
@@ -284,20 +299,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				6804078D27465E230085351B /* SettingsView.swift in Sources */,
+				66E5982F2747AF0200259E3F /* AssociationsView.swift in Sources */,
+				66E598352747AF0200259E3F /* MedicalServicesView.swift in Sources */,
 				0BB554A7273E7B8E00ACAEDE /* OrganizerView.swift in Sources */,
 				0BB55490273E6FF900ACAEDE /* afterusApp.swift in Sources */,
+				66E598312747AF0200259E3F /* DataDoctors.swift in Sources */,
 				66B4C5F62743C6E200C0FBE8 /* InfopointView.swift in Sources */,
-				66FB9C382746685A002A3A21 /* MedicalServicesView.swift in Sources */,
 				0BB554A1273E76CA00ACAEDE /* JournalView.swift in Sources */,
 				0BB55494273E6FF900ACAEDE /* Persistence.swift in Sources */,
 				66B4C5FF27440DFB00C0FBE8 /* LawyersView.swift in Sources */,
 				0B892B5C2746AAF600B4B746 /* PieChartData.swift in Sources */,
 				0BB5548E273E6FF900ACAEDE /* afterus.xcdatamodeld in Sources */,
 				0BB55492273E6FF900ACAEDE /* ContentView.swift in Sources */,
-				66FB9C352746684C002A3A21 /* AssociationsView.swift in Sources */,
 				68F397392742A8490096A8A1 /* HistoryView.swift in Sources */,
 				68F3973627427E080096A8A1 /* NewNoteView.swift in Sources */,
-				66FB9C3E2746A0A2002A3A21 /* TutorialView.swift in Sources */,
 				68F3973F2742AB780096A8A1 /* ProfileView.swift in Sources */,
 				66B4C5F92743CC2D00C0FBE8 /* DoctorsView.swift in Sources */,
 			);

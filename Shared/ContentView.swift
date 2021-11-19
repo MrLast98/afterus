@@ -47,14 +47,13 @@ struct ContentView: View {
             OrganizerView()
                 .tabItem {
                     Image(systemName: "calendar")
-                        
-                        Text("Organizer")
-                    }
+                    Text("Organizer")
+                }
             InfopointView()
-                    .tabItem {
-                        Image(systemName: "book.closed.fill")
-                        Text("Infopoint")
-                    }
+                .tabItem {
+                    Image(systemName: "book.closed.fill")
+                    Text("Infopoint")
+                }
         }
     }
 }

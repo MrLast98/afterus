@@ -50,10 +50,11 @@ struct ContentView: View {
                     Text("Organizer")
                 }
             InfopointView()
-                .tabItem {
-                    Image(systemName: "book.closed.fill")
-                    Text("Infopoint")
-                }
+                    .tabItem {
+                        Image(systemName: "book.closed.fill")
+                        Text("Infopoint")
+                    }
+            
         }
     }
 }
@@ -63,3 +64,6 @@ struct ContentView_Previews: PreviewProvider {
         ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }
+
+
+

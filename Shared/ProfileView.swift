@@ -12,59 +12,44 @@ struct ProfileView: View{
     
     @State private var testo4 = ""
     @State private var testo5 = ""
+    @State private var testo6 = ""
     
     var body: some View{
         NavigationView{
             VStack{
-
-                    HStack{
-                        Button(action: {}) {
-                            Text("TUTORIAL")
-                                .font(.title2)
-                                .bold()
-                                .foregroundColor(.myColor1)
-                            
-                        }.padding(.horizontal)
-                    
-                        
-                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                            Text("ABOUT US")
-                                .font(.title2)
-                                .bold()
-                                .foregroundColor(.myColor2)
-                            
-                        }
-                    }
+                TextField("Full Name", text: $testo4)
+                    .padding([.top, .leading, .trailing], 15.0)
+                Divider()
+                    .padding(.horizontal)
+                TextField("City", text: $testo5)
+                    .padding([.top, .leading, .trailing], 15.0)
+                Divider()
+                    .padding(.horizontal)
+                TextField("Tessera Sanitaria", text: $testo6)
+                    .padding([.top, .leading, .trailing], 15.0)
+                Divider()
+                    .padding(.horizontal)
+                HStack{
+                    Text("Cartella Clinica")
+                        .bold()
+                        .padding()
                     Spacer()
-                    
-                    TextField("Full Name", text: $testo4)
-                        .padding([.top, .leading, .trailing], 15.0)
-                    Divider()
-                        .padding(.horizontal)
-                
-                VStack{
-                    
-                    TextField("City", text: $testo5)
-                        .padding([.top, .leading, .trailing], 15.0)
-                    
-                    Divider()
-                    
-                    HStack{
-                        Text("Files")
-                            .bold()
-                        
-                        Text("msffds")
-                    }
                 }
+                HStack{
+                    Text("msffds")
+                    Text("msffds")
+                    Text("msffds")
+                }
+            }
                 .padding(.horizontal)
                 .navigationTitle("PROFILE")
                 Spacer()
                 HStack{
-                    
-                   Spacer()
+                    Spacer()
                     
                     NavigationLink(destination: NewNoteView()) {
                         makeButtonView(title: "Save")
+                            .foregroundColor(.black)
                             .background(Color.myColor1)
                             .cornerRadius(14)
                             .frame(width: 138, height: 45)
@@ -73,11 +58,22 @@ struct ProfileView: View{
                     }
                     
                 }
+                Spacer()
                 Image("LogoProfileView")
                     .padding()
                 Spacer()
             }
+            .padding()
         }
+    }
+
+
+extension Color {
+    static var myColor1: Color {
+        Color(uiColor: .init(red: 143 / 255, green: 225 / 255, blue: 215 / 255, alpha: 1))
+    }
+    static var myColor2: Color {
+        Color(uiColor: .init(red: 195 / 255, green: 166 / 255, blue: 224 / 255, alpha: 1))
     }
 }
 
@@ -87,12 +83,4 @@ struct ProfileView_Previews: PreviewProvider {
     }
 }
 
-extension Color {
-    static var myColor1: Color {
-        Color(uiColor: .init(red: 143 / 255, green: 225 / 255, blue: 215 / 255, alpha: 1))
-    }
-    
-    static var myColor2: Color {
-        Color(uiColor: .init(red: 195 / 255, green: 166 / 255, blue: 224 / 255, alpha: 1))
-    }
-}
+

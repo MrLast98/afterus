@@ -15,21 +15,18 @@ struct JournalView: View {
                 Spacer()
                 NavigationLink(destination: NewNoteView()) {
                     makeButtonView(title: "New note")
+                        .foregroundColor(.black)
                         .background(Color(uiColor: .init(red: 224 / 255, green: 153 / 255, blue: 121 / 255, alpha: 1)))
                         .cornerRadius(14)
                 }
                 Spacer()
                 NavigationLink(destination: HistoryView()) {
                     makeButtonView(title: "History")
-                        .background(Color(uiColor: .init(red: 224 / 255, green: 153 / 255, blue: 121 / 255, alpha: 1)))
+                        .foregroundColor(.black)
+                        .background(Color(uiColor: .init(red: 224 / 255, green: 153 / 255, blue: 121 / 255, alpha: 0.9)))
                         .cornerRadius(14)
                 }
-                Spacer()
-                NavigationLink(destination: CheckView()) {
-                    makeButtonView(title: "Check")
-                        .background(Color(uiColor: .init(red: 224 / 255, green: 153 / 255, blue: 121 / 255, alpha: 1)))
-                        .cornerRadius(14)
-                }
+              
                 Spacer()
                 HStack{
                     Spacer()
@@ -43,8 +40,8 @@ struct JournalView: View {
             .toolbar{
                 Button {
                 } label: {
-                    NavigationLink(destination: ProfileView()){
-                        Image(systemName:"person.crop.circle")
+                    NavigationLink(destination: SettingsView()){
+                        Image(systemName:"gearshape")
                     }
                     
                 }
@@ -60,7 +57,7 @@ func makeButtonView(title: String) -> some View {
         .bold()
         .padding()
         .frame(maxWidth: .infinity, minHeight: 60)
-        .foregroundColor(.black)
+//        .foregroundColor(.black)
     //.background(Color(uiColor: .init(red: 224 / 255, green: 153 / 255, blue: 121 / 255, alpha: 1)))
     //        .cornerRadius(14)
 }

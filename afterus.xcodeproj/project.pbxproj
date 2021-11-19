@@ -23,6 +23,7 @@
 		0BB554A1273E76CA00ACAEDE /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB5549F273E76CA00ACAEDE /* JournalView.swift */; };
 		0BB554A6273E7B8E00ACAEDE /* OrganizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB554A5273E7B8E00ACAEDE /* OrganizerView.swift */; };
 		0BB554A7273E7B8E00ACAEDE /* OrganizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB554A5273E7B8E00ACAEDE /* OrganizerView.swift */; };
+		660AF70F2747FF4800FB35B8 /* TutorialJournal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660AF70E2747FF4800FB35B8 /* TutorialJournal.swift */; };
 		66B4C5F52743C6E200C0FBE8 /* InfopointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B4C5F42743C6E200C0FBE8 /* InfopointView.swift */; };
 		66B4C5F62743C6E200C0FBE8 /* InfopointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B4C5F42743C6E200C0FBE8 /* InfopointView.swift */; };
 		66B4C5F82743CC2D00C0FBE8 /* DoctorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B4C5F72743CC2D00C0FBE8 /* DoctorsView.swift */; };
@@ -33,8 +34,6 @@
 		66E5982F2747AF0200259E3F /* AssociationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E5982A2747AF0200259E3F /* AssociationsView.swift */; };
 		66E598302747AF0200259E3F /* DataDoctors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E5982B2747AF0200259E3F /* DataDoctors.swift */; };
 		66E598312747AF0200259E3F /* DataDoctors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E5982B2747AF0200259E3F /* DataDoctors.swift */; };
-		66E598322747AF0200259E3F /* Tutorial in Resources */ = {isa = PBXBuildFile; fileRef = 66E5982C2747AF0200259E3F /* Tutorial */; };
-		66E598332747AF0200259E3F /* Tutorial in Resources */ = {isa = PBXBuildFile; fileRef = 66E5982C2747AF0200259E3F /* Tutorial */; };
 		66E598342747AF0200259E3F /* MedicalServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E5982D2747AF0200259E3F /* MedicalServicesView.swift */; };
 		66E598352747AF0200259E3F /* MedicalServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E5982D2747AF0200259E3F /* MedicalServicesView.swift */; };
 		6804078C27465E230085351B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6804078B27465E230085351B /* SettingsView.swift */; };
@@ -59,12 +58,12 @@
 		0BB5548C273E6FF900ACAEDE /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		0BB5549F273E76CA00ACAEDE /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
 		0BB554A5273E7B8E00ACAEDE /* OrganizerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizerView.swift; sourceTree = "<group>"; };
+		660AF70E2747FF4800FB35B8 /* TutorialJournal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialJournal.swift; sourceTree = "<group>"; };
 		66B4C5F42743C6E200C0FBE8 /* InfopointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfopointView.swift; sourceTree = "<group>"; };
 		66B4C5F72743CC2D00C0FBE8 /* DoctorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorsView.swift; sourceTree = "<group>"; };
 		66B4C5FD27440DFB00C0FBE8 /* LawyersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawyersView.swift; sourceTree = "<group>"; };
 		66E5982A2747AF0200259E3F /* AssociationsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssociationsView.swift; sourceTree = "<group>"; };
 		66E5982B2747AF0200259E3F /* DataDoctors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataDoctors.swift; sourceTree = "<group>"; };
-		66E5982C2747AF0200259E3F /* Tutorial */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Tutorial; sourceTree = "<group>"; };
 		66E5982D2747AF0200259E3F /* MedicalServicesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicalServicesView.swift; sourceTree = "<group>"; };
 		6804078B27465E230085351B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		68F3973427427E080096A8A1 /* NewNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteView.swift; sourceTree = "<group>"; };
@@ -155,23 +154,23 @@
 		0BB554A4273E770900ACAEDE /* Infopoint */ = {
 			isa = PBXGroup;
 			children = (
-				66E5982A2747AF0200259E3F /* AssociationsView.swift */,
-				66E5982B2747AF0200259E3F /* DataDoctors.swift */,
 				66B4C5F72743CC2D00C0FBE8 /* DoctorsView.swift */,
 				66B4C5FD27440DFB00C0FBE8 /* LawyersView.swift */,
+				66E5982A2747AF0200259E3F /* AssociationsView.swift */,
 				66E5982D2747AF0200259E3F /* MedicalServicesView.swift */,
 				66B4C5F42743C6E200C0FBE8 /* InfopointView.swift */,
-				66E5982C2747AF0200259E3F /* Tutorial */,
-				66FB9C3B2746A035002A3A21 /* Tutorial */,
+				66E5982B2747AF0200259E3F /* DataDoctors.swift */,
+				660AF70D2747FD8D00FB35B8 /* TutoialTot */,
 			);
 			path = Infopoint;
 			sourceTree = "<group>";
 		};
-		66FB9C3B2746A035002A3A21 /* Tutorial */ = {
+		660AF70D2747FD8D00FB35B8 /* TutoialTot */ = {
 			isa = PBXGroup;
 			children = (
+				660AF70E2747FF4800FB35B8 /* TutorialJournal.swift */,
 			);
-			path = Tutorial;
+			path = TutoialTot;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,7 +252,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66E598322747AF0200259E3F /* Tutorial in Resources */,
 				0BB55495273E6FF900ACAEDE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,7 +260,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66E598332747AF0200259E3F /* Tutorial in Resources */,
 				0BB55496273E6FF900ACAEDE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,6 +276,7 @@
 				66E598342747AF0200259E3F /* MedicalServicesView.swift in Sources */,
 				0BB554A6273E7B8E00ACAEDE /* OrganizerView.swift in Sources */,
 				0BB5548F273E6FF900ACAEDE /* afterusApp.swift in Sources */,
+				660AF70F2747FF4800FB35B8 /* TutorialJournal.swift in Sources */,
 				66E598302747AF0200259E3F /* DataDoctors.swift in Sources */,
 				66B4C5F52743C6E200C0FBE8 /* InfopointView.swift in Sources */,
 				0BB554A0273E76CA00ACAEDE /* JournalView.swift in Sources */,

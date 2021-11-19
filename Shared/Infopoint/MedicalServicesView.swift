@@ -44,12 +44,12 @@ struct MedicalServicesView: View {
                 }
             }
         
-        HStack{
-            Spacer()
-            Image("MapSan")
-                .padding()
-        }
-        
+//        HStack{
+//            Spacer()
+//            Image("MapSan")
+//                .padding()
+//        }
+//        
       
      
             
@@ -68,20 +68,59 @@ struct MedicalServicesView: View {
                 .navigationTitle("Search for a Medical Service ")
 
             }
-        VStack{
-                    List {
-                           Text("sdlijvbjidbv")
-                           Text("wkejfbòkjef")
-                           Text("EIJFBòejf")
-                           Text("eijfb e    jfn")
-                           Text("wfji   efbpeoufb")
-
-                    }
-                    
-                 
-                    
-                    
-                }
+        ScrollView {
+            
+            
+            
+            Image("MapSan")
+                .padding()
+            makeButtonView(title: "Neuropsichiatra")
+                .background(Color(uiColor: .init(red: 195 / 255, green: 166 / 255, blue: 224 / 255, alpha: 0.50)))
+                .cornerRadius(14)
+                .frame(width: 377)
+            
+            makeButtonView(title: "Psicologo")
+                .background(Color(uiColor: .init(red: 195 / 255, green: 166 / 255, blue: 224 / 255, alpha: 0.50)))
+                .cornerRadius(14)
+                .frame(width: 377)
+            
+            makeButtonView(title: "Pornostar")
+                .background(Color(uiColor: .init(red: 195 / 255, green: 166 / 255, blue: 224 / 255, alpha: 0.50)))
+                .cornerRadius(14)
+                .frame(width: 377)
+            
+            makeButtonView(title: "Gigolò")
+                .background(Color(uiColor: .init(red: 195 / 255, green: 166 / 255, blue: 224 / 255, alpha: 0.50)))
+                .cornerRadius(14)
+                .frame(width: 377)
+                
+            
+            makeButtonView(title: "Spaccino 1")
+                .background(Color(uiColor: .init(red: 195 / 255, green: 166 / 255, blue: 224 / 255, alpha: 0.50)))
+                .cornerRadius(14)
+                .frame(width: 377)
+            
+            makeButtonView(title: "Spaccino 2")
+                .background(Color(uiColor: .init(red: 195 / 255, green: 166 / 255, blue: 224 / 255, alpha: 0.50)))
+                .cornerRadius(14)
+                .frame(width: 377)
+            
+            makeButtonView(title: "Pornosite")
+                .background(Color(uiColor: .init(red: 195 / 255, green: 166 / 255, blue: 224 / 255, alpha: 0.50)))
+                .cornerRadius(14)
+                .frame(width: 377)
+            
+            makeButtonView(title: "Mi so rotto il cazzo")
+                .background(Color(uiColor: .init(red: 195 / 255, green: 166 / 255, blue: 224 / 255, alpha: 0.50)))
+                .cornerRadius(14)
+                .frame(width: 377)
+            
+            makeButtonView(title: "Non so cosa scrivere")
+                .background(Color(uiColor: .init(red: 195 / 255, green: 166 / 255, blue: 224 / 255, alpha: 0.50)))
+                .cornerRadius(14)
+                .frame(width: 377)
+         
+        }
             
             
             

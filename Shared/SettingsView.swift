@@ -14,17 +14,20 @@ struct SettingsView: View {
         NavigationView {
             VStack {
                 
-               Spacer()
+                Spacer()
+                NavigationLink(destination: TutorialJournal()){
                     makeButtonView(title: "TUTORIAL")
                         .foregroundColor(Color.myColor1)
-
-                        .overlay(RoundedRectangle(cornerRadius: 18).stroke(Color.myColor1, lineWidth: 4))
-
-                        .shadow(radius: 10)
-
-                        .padding()
-
-                    Spacer()
+                    
+                        .overlay(RoundedRectangle(cornerRadius: 18)
+                                    .stroke(Color.myColor1, lineWidth: 4))
+                    
+                    .shadow(radius: 10)}
+                .padding()
+                
+                
+                
+                Spacer()
                     makeButtonView(title: "ABOUT US")
                         .foregroundColor(Color.myColor2)
                         .overlay(RoundedRectangle(cornerRadius: 18).stroke(Color.myColor2, lineWidth: 4))
@@ -45,11 +48,12 @@ struct SettingsView: View {
         }
     }
     
-}
+//}
 
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
         SettingsView()
         
     }
+}
 }

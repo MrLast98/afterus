@@ -36,6 +36,20 @@ struct ProfileView: View{
                     Spacer()
                 }
                 HStack{
+                    ZStack{
+                    RoundedRectangle(cornerRadius: 14)
+                        .foregroundColor(.myColor1)
+                        Image("LogoPdf")
+                       
+                    }
+                    ZStack{
+                        RoundedRectangle(cornerRadius: 14)
+                            .foregroundColor(.myColor1)
+                        Image("LogoPdf")
+                    
+                    }
+                   
+                    
                     Text("msffds")
                     Text("msffds")
                     Text("msffds")

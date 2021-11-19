@@ -29,13 +29,19 @@ struct InfopointView: View {
                         .cornerRadius(14)
                 }
                 Spacer()
-               
-                NavigationLink(destination: NewNoteView()) {
+                NavigationLink(destination: AssociationsView()) {
+                    makeButtonView(title: "Associations")
+                        .background(Color(uiColor: .init(red: 195 / 255, green: 166 / 255, blue: 224 / 255, alpha: 0.60)))
+                        .cornerRadius(14)
+                }
+                Spacer()
+                NavigationLink(destination: MedicalServicesView()) {
                     makeButtonView(title: "Medical Services")
                         .background(Color(uiColor: .init(red: 195 / 255, green: 166 / 255, blue: 224 / 255, alpha: 0.50)))
                         .cornerRadius(14)
                 }
                 Spacer()
+                
                 HStack{
                     Spacer()
                     Image("LogoInfoPointView")
@@ -63,5 +69,4 @@ struct InfopointView_Previews: PreviewProvider{
         
     }
 }
-
 

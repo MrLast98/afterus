@@ -10,13 +10,38 @@ import Foundation
 import SwiftUI
 
 
+struct NameDoc: Identifiable {
+    let name: String
+    let id = UUID()
+}
+
+private var doctor = [
+    NameDoc(name: "Pinco"),
+    NameDoc(name: "Pallino"),
+    NameDoc(name: "StoCazzo"),
+    NameDoc(name: "Carmine"),
+    NameDoc(name: "Blallo"),
+    NameDoc(name: "NonLoSo"),
+    NameDoc(name: "Goku"),
+    NameDoc(name: "Seth di OC"),
+    NameDoc(name: "Bud Spencer"),
+    NameDoc(name: "Cicciolina")
+]
+
+
+    
+
+
+
+
+
 struct DoctorsView: View {
     @State private var searchText = ""
 
     var body: some View {
         
         
-        
+     
     Text("")
             .font(.largeTitle)
             .fontWeight(.heavy)
@@ -32,40 +57,45 @@ struct DoctorsView: View {
 
                 }
             }
-            
-        NavigationView {
-            
+        
+        ScrollView {
+            VStack(spacing: 10) {
+                ForEach(1..<15) {
+                    Text("Doctor \($0)")
+                        .foregroundColor(.white)
+                        .font(.largeTitle)
+                        .frame(width: 300, height: 60)
+                        .background(Color(uiColor: .init(red: 195 / 255, green: 166 / 255, blue: 224 / 255, alpha: 0.80)))
+                        .cornerRadius(14)
+                }
+            }
+        }
+    
+     
             
              
                     
             
             VStack {
-                Text("")
-                    .font(.footnote)
-                    .fontWeight(.thin)
-                    .foregroundColor(Color.black)
-                    .searchable(text: $searchText)
-                .navigationTitle("Search for a Doctor ")
                 
-                
-                Text ("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
+                Text (" ")
                     .foregroundColor(Color.black)
                     .multilineTextAlignment(.center)
-
-
-              
-
+                    .font(.footnote)
+                    
+                    .foregroundColor(Color.black)
+                    .searchable(text: $searchText)
+                .navigationTitle("Search for a Doctor")
+//                 List(lawyers) {
+//                    Text($0.name)
+//                }
                 
-                
-                
-        }
             
             
             
     }
     }
     
+
+
 }
-
-
-

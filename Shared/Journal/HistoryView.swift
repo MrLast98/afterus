@@ -9,23 +9,30 @@ import Foundation
 import SwiftUI
 
 struct HistoryView: View{
+@State private var search = ""
     var body: some View{
+        
         NavigationView{
             VStack {
-                
-                Text("Sergiy")
-                    .padding(.horizontal)
+                Text(" \(search)")
+                    .searchable(text: $search)
                     .navigationTitle("HISTORY")
+                    .padding()
+                
                     .toolbar{
                         Button {
                         } label: {
-                            NavigationLink(destination: NewNoteView()){
-                                Image(systemName:"plus.circle")
+                            NavigationLink(destination: SettingsView()){
+                                Image(systemName:"gearshape")
                             }
                             
                         }
                     }
-                
+                List {
+                    Text("ciao")
+                    Text("ciao")
+                    Text("ciao")
+                }
                 Image("LogoHistoryView")
                 
             }

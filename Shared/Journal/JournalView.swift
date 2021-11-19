@@ -8,9 +8,6 @@
 import Foundation
 import SwiftUI
 
-
-
-
 struct JournalView: View {
     var body: some View {
         NavigationView {

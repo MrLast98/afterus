@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B892B5B2746AAF600B4B746 /* PieChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B892B5A2746AAF600B4B746 /* PieChartData.swift */; };
+		0B892B5C2746AAF600B4B746 /* PieChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B892B5A2746AAF600B4B746 /* PieChartData.swift */; };
 		0BB5548D273E6FF900ACAEDE /* afterus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0BB5547A273E6FF800ACAEDE /* afterus.xcdatamodeld */; };
 		0BB5548E273E6FF900ACAEDE /* afterus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0BB5547A273E6FF800ACAEDE /* afterus.xcdatamodeld */; };
 		0BB5548F273E6FF900ACAEDE /* afterusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB5547C273E6FF800ACAEDE /* afterusApp.swift */; };
@@ -38,6 +40,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B892B5A2746AAF600B4B746 /* PieChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartData.swift; sourceTree = "<group>"; };
 		0BB5547B273E6FF800ACAEDE /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		0BB5547C273E6FF800ACAEDE /* afterusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = afterusApp.swift; sourceTree = "<group>"; };
 		0BB5547D273E6FF800ACAEDE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -132,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				0BB554A5273E7B8E00ACAEDE /* OrganizerView.swift */,
+				0B892B5A2746AAF600B4B746 /* PieChartData.swift */,
 			);
 			path = Organizer;
 			sourceTree = "<group>";
@@ -263,6 +267,7 @@
 				0BB554A0273E76CA00ACAEDE /* JournalView.swift in Sources */,
 				0BB55493273E6FF900ACAEDE /* Persistence.swift in Sources */,
 				66B4C5FE27440DFB00C0FBE8 /* LawyersView.swift in Sources */,
+				0B892B5B2746AAF600B4B746 /* PieChartData.swift in Sources */,
 				0BB5548D273E6FF900ACAEDE /* afterus.xcdatamodeld in Sources */,
 				0BB55491273E6FF900ACAEDE /* ContentView.swift in Sources */,
 				66FB9C342746684C002A3A21 /* AssociationsView.swift in Sources */,
@@ -286,6 +291,7 @@
 				0BB554A1273E76CA00ACAEDE /* JournalView.swift in Sources */,
 				0BB55494273E6FF900ACAEDE /* Persistence.swift in Sources */,
 				66B4C5FF27440DFB00C0FBE8 /* LawyersView.swift in Sources */,
+				0B892B5C2746AAF600B4B746 /* PieChartData.swift in Sources */,
 				0BB5548E273E6FF900ACAEDE /* afterus.xcdatamodeld in Sources */,
 				0BB55492273E6FF900ACAEDE /* ContentView.swift in Sources */,
 				66FB9C352746684C002A3A21 /* AssociationsView.swift in Sources */,

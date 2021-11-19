@@ -62,7 +62,7 @@ struct LawyersView: View {
                     Text("Lawyer \($0)")
                         .foregroundColor(.white)
                         .font(.largeTitle)
-                        .frame(width: 300, height: 60)
+                        .frame(width: 300, height: 55)
                         .background(Color(uiColor: .init(red: 195 / 255, green: 166 / 255, blue: 224 / 255, alpha: 0.80)))
                         .cornerRadius(14)
                 }

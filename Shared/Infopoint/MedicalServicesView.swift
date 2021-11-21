@@ -10,37 +10,27 @@
 import Foundation
 import SwiftUI
 
-
-
-
-
-    
-
-
-
-
-
 struct MedicalServicesView: View {
     @State private var searchText = ""
-
+    
     var body: some View {
         
         
-
         
-    Text("")
+        
+        Text("")
             .font(.largeTitle)
             .fontWeight(.heavy)
             .foregroundColor(Color.black)
             .navigationTitle("Medical Services")
-            
+        
             .toolbar{
                 Button {
                 } label: {
                     NavigationLink(destination: ProfileView()){
                         Image(systemName:"person.crop.circle")
                     }
-
+                    
                 }
             }
         
@@ -50,42 +40,42 @@ struct MedicalServicesView: View {
                 .padding()
         }
         
-      
-     
+        
+        
+        
+        
+        
+        
+        VStack {
             
-             
-                    
+            Text (" ")
+                .foregroundColor(Color.black)
+                .multilineTextAlignment(.center)
+                .font(.footnote)
             
-            VStack {
-                
-                Text (" ")
-                    .foregroundColor(Color.black)
-                    .multilineTextAlignment(.center)
-                    .font(.footnote)
-                    
-                    .foregroundColor(Color.black)
-                    .searchable(text: $searchText)
+                .foregroundColor(Color.black)
+                .searchable(text: $searchText)
                 .navigationTitle("Search for a Medical Service ")
-
-            }
+            
+        }
         VStack{
-                    List {
-                           Text("sdlijvbjidbv")
-                           Text("wkejfbòkjef")
-                           Text("EIJFBòejf")
-                           Text("eijfb e    jfn")
-                           Text("wfji   efbpeoufb")
-
-                    }
-                    
-                 
-                    
-                    
-                }
+            List {
+                Text("sdlijvbjidbv")
+                Text("wkejfbòkjef")
+                Text("EIJFBòejf")
+                Text("eijfb e    jfn")
+                Text("wfji   efbpeoufb")
+                
+            }
             
             
             
+            
+        }
+        
+        
+        
     }
-    }  // FINE BODY
-    
+}  // FINE BODY
+
 

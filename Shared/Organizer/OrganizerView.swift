@@ -17,9 +17,11 @@ struct OrganizerView: View {
         VStack{
             NavigationView{
                 dayList()
-                .frame(height:80)
-                .padding(.horizontal)
-                .navigationTitle("ORGANIZER")
+                    .padding(.horizontal)
+                    .navigationTitle("ORGANIZER")
+                
+            }
+                .frame(height:200)
                 .toolbar{
                     Button {
                     } label: {
@@ -28,8 +30,13 @@ struct OrganizerView: View {
                         }
                     }
                 }
-            }
-            Text("naggiamaronn")
+            PieChartView(
+                values: [1300, 500, 300],
+                names: ["Rent", "Transport", "Education"],
+                formatter: {value in String(format: "$%.2f", value)},
+                //colors:
+                backgroundColor: Color.white)
+                
         }
         
     }
@@ -39,15 +46,15 @@ struct dayList: View {
     @State var list: [String] = [ "5", "12", "31"]
     var body: some View {
         ScrollView (.horizontal, showsIndicators: false) {
-             LazyHStack {
-                 ForEach(list, id: \.self) {
-                     list in Image(systemName: list + ".circle")
-                         .resizable()
-                         .scaledToFill()
-                         .frame(width: 50, height: 50)
-                         .badge(list)
-                 }
-             }
+            LazyHStack {
+                ForEach(list, id: \.self) {
+                    list in Image(systemName: list + ".circle")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 50, height: 50)
+                        .badge(list)
+                }
+            }
         }
     }
 }

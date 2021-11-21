@@ -37,49 +37,49 @@ struct ProfileView: View{
                 }
                 HStack{
                     ZStack{
-                    RoundedRectangle(cornerRadius: 14)
-                        .foregroundColor(.myColor1)
+                        RoundedRectangle(cornerRadius: 14)
+                            .foregroundColor(.myColor1)
                         Image("LogoPdf")
-                       
+                        
                     }
                     ZStack{
                         RoundedRectangle(cornerRadius: 14)
                             .foregroundColor(.myColor1)
                         Image("LogoPdf")
-                    
+                        
                     }
-                   
+                    
                     
                     Text("msffds")
                     Text("msffds")
                     Text("msffds")
                 }
             }
-                .padding(.horizontal)
-                .navigationTitle("PROFILE")
+            .padding(.horizontal)
+            .navigationTitle("PROFILE")
+            Spacer()
+            HStack{
                 Spacer()
-                HStack{
+                
+                NavigationLink(destination: NewNoteView()) {
+                    makeButtonView(title: "Save")
+                        .foregroundColor(.black)
+                        .background(Color.myColor1)
+                        .cornerRadius(14)
+                        .frame(width: 138, height: 45)
+                        .padding()
                     Spacer()
-                    
-                    NavigationLink(destination: NewNoteView()) {
-                        makeButtonView(title: "Save")
-                            .foregroundColor(.black)
-                            .background(Color.myColor1)
-                            .cornerRadius(14)
-                            .frame(width: 138, height: 45)
-                            .padding()
-                        Spacer()
-                    }
-                    
                 }
-                Spacer()
-                Image("LogoProfileView")
-                    .padding()
-                Spacer()
+                
             }
-            .padding()
+            Spacer()
+            Image("LogoProfileView")
+                .padding()
+            Spacer()
         }
+        .padding()
     }
+}
 
 
 extension Color {

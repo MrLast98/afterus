@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B892B5B2746AAF600B4B746 /* PieChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B892B5A2746AAF600B4B746 /* PieChartData.swift */; };
-		0B892B5C2746AAF600B4B746 /* PieChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B892B5A2746AAF600B4B746 /* PieChartData.swift */; };
+		0B10032F274A442C0042CAAE /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B10032E274A442C0042CAAE /* PieChartView.swift */; };
+		0B100330274A442C0042CAAE /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B10032E274A442C0042CAAE /* PieChartView.swift */; };
+		0B100332274A490A0042CAAE /* PieSliceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B100331274A490A0042CAAE /* PieSliceView.swift */; };
+		0B100333274A490A0042CAAE /* PieSliceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B100331274A490A0042CAAE /* PieSliceView.swift */; };
+		0B8680D22747B70E00C6E861 /* SwiftPieChart in Frameworks */ = {isa = PBXBuildFile; productRef = 0B8680D12747B70E00C6E861 /* SwiftPieChart */; };
 		0BB5548D273E6FF900ACAEDE /* afterus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0BB5547A273E6FF800ACAEDE /* afterus.xcdatamodeld */; };
 		0BB5548E273E6FF900ACAEDE /* afterus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0BB5547A273E6FF800ACAEDE /* afterus.xcdatamodeld */; };
 		0BB5548F273E6FF900ACAEDE /* afterusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB5547C273E6FF800ACAEDE /* afterusApp.swift */; };
@@ -48,7 +51,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0B892B5A2746AAF600B4B746 /* PieChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartData.swift; sourceTree = "<group>"; };
+		0B10032E274A442C0042CAAE /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
+		0B100331274A490A0042CAAE /* PieSliceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieSliceView.swift; sourceTree = "<group>"; };
 		0BB5547B273E6FF800ACAEDE /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		0BB5547C273E6FF800ACAEDE /* afterusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = afterusApp.swift; sourceTree = "<group>"; };
 		0BB5547D273E6FF800ACAEDE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B8680D22747B70E00C6E861 /* SwiftPieChart in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,7 +152,8 @@
 			isa = PBXGroup;
 			children = (
 				0BB554A5273E7B8E00ACAEDE /* OrganizerView.swift */,
-				0B892B5A2746AAF600B4B746 /* PieChartData.swift */,
+				0B10032E274A442C0042CAAE /* PieChartView.swift */,
+				0B100331274A490A0042CAAE /* PieSliceView.swift */,
 			);
 			path = Organizer;
 			sourceTree = "<group>";
@@ -190,6 +196,9 @@
 			dependencies = (
 			);
 			name = "afterus (iOS)";
+			packageProductDependencies = (
+				0B8680D12747B70E00C6E861 /* SwiftPieChart */,
+			);
 			productName = "afterus (iOS)";
 			productReference = 0BB55484273E6FF900ACAEDE /* afterus.app */;
 			productType = "com.apple.product-type.application";
@@ -238,6 +247,9 @@
 				Base,
 			);
 			mainGroup = 0BB55474273E6FF700ACAEDE;
+			packageReferences = (
+				0B8680D02747B70E00C6E861 /* XCRemoteSwiftPackageReference "SwiftPieChart" */,
+			);
 			productRefGroup = 0BB55485273E6FF900ACAEDE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -284,10 +296,11 @@
 				0BB554A0273E76CA00ACAEDE /* JournalView.swift in Sources */,
 				0BB55493273E6FF900ACAEDE /* Persistence.swift in Sources */,
 				66B4C5FE27440DFB00C0FBE8 /* LawyersView.swift in Sources */,
-				0B892B5B2746AAF600B4B746 /* PieChartData.swift in Sources */,
 				0BB5548D273E6FF900ACAEDE /* afterus.xcdatamodeld in Sources */,
 				0BB55491273E6FF900ACAEDE /* ContentView.swift in Sources */,
 				68F397382742A8490096A8A1 /* HistoryView.swift in Sources */,
+				0B10032F274A442C0042CAAE /* PieChartView.swift in Sources */,
+				0B100332274A490A0042CAAE /* PieSliceView.swift in Sources */,
 				68F3973527427E080096A8A1 /* NewNoteView.swift in Sources */,
 				68F3973E2742AB780096A8A1 /* ProfileView.swift in Sources */,
 				66B4C5F82743CC2D00C0FBE8 /* DoctorsView.swift in Sources */,
@@ -308,10 +321,11 @@
 				0BB554A1273E76CA00ACAEDE /* JournalView.swift in Sources */,
 				0BB55494273E6FF900ACAEDE /* Persistence.swift in Sources */,
 				66B4C5FF27440DFB00C0FBE8 /* LawyersView.swift in Sources */,
-				0B892B5C2746AAF600B4B746 /* PieChartData.swift in Sources */,
 				0BB5548E273E6FF900ACAEDE /* afterus.xcdatamodeld in Sources */,
 				0BB55492273E6FF900ACAEDE /* ContentView.swift in Sources */,
 				68F397392742A8490096A8A1 /* HistoryView.swift in Sources */,
+				0B100330274A442C0042CAAE /* PieChartView.swift in Sources */,
+				0B100333274A490A0042CAAE /* PieSliceView.swift in Sources */,
 				68F3973627427E080096A8A1 /* NewNoteView.swift in Sources */,
 				68F3973F2742AB780096A8A1 /* ProfileView.swift in Sources */,
 				66B4C5F92743CC2D00C0FBE8 /* DoctorsView.swift in Sources */,
@@ -576,6 +590,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0B8680D02747B70E00C6E861 /* XCRemoteSwiftPackageReference "SwiftPieChart" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ilamanov/SwiftPieChart";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.61;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0B8680D12747B70E00C6E861 /* SwiftPieChart */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0B8680D02747B70E00C6E861 /* XCRemoteSwiftPackageReference "SwiftPieChart" */;
+			productName = SwiftPieChart;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		0BB5547A273E6FF800ACAEDE /* afterus.xcdatamodeld */ = {

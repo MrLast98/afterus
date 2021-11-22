@@ -15,16 +15,15 @@ struct SettingsView: View {
             VStack {
                 
                 Spacer()
-                NavigationLink(destination: TutorialJournal()){
+                NavigationLink(destination: TutorialMinimal()){
                     makeButtonView(title: "TUTORIAL")
                         .foregroundColor(Color.myColor1)
-                    
                         .overlay(RoundedRectangle(cornerRadius: 18)
-                                    .stroke(Color.myColor1, lineWidth: 4))
+                        .stroke(Color.myColor1, lineWidth: 4))
+                        .shadow(radius: 10)
                     
-                    .shadow(radius: 10)}
-                .padding()
-                
+                }.padding()
+                    
                 
                 
                 Spacer()

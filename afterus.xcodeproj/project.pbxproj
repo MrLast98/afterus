@@ -26,7 +26,10 @@
 		0BB554A1273E76CA00ACAEDE /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB5549F273E76CA00ACAEDE /* JournalView.swift */; };
 		0BB554A6273E7B8E00ACAEDE /* OrganizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB554A5273E7B8E00ACAEDE /* OrganizerView.swift */; };
 		0BB554A7273E7B8E00ACAEDE /* OrganizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB554A5273E7B8E00ACAEDE /* OrganizerView.swift */; };
-		660AF70F2747FF4800FB35B8 /* TutorialJournal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660AF70E2747FF4800FB35B8 /* TutorialJournal.swift */; };
+		660AF70F2747FF4800FB35B8 /* TutorialMinimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660AF70E2747FF4800FB35B8 /* TutorialMinimal.swift */; };
+		6634A37E2749225200185670 /* TutorialOrganizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6634A37D2749225200185670 /* TutorialOrganizer.swift */; };
+		6634A38027492C7800185670 /* TutorialPhoneBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6634A37F27492C7800185670 /* TutorialPhoneBook.swift */; };
+		666E19BF27480E030050134D /* TutorialJourrnal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666E19BE27480E030050134D /* TutorialJourrnal.swift */; };
 		66B4C5F52743C6E200C0FBE8 /* InfopointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B4C5F42743C6E200C0FBE8 /* InfopointView.swift */; };
 		66B4C5F62743C6E200C0FBE8 /* InfopointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B4C5F42743C6E200C0FBE8 /* InfopointView.swift */; };
 		66B4C5F82743CC2D00C0FBE8 /* DoctorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B4C5F72743CC2D00C0FBE8 /* DoctorsView.swift */; };
@@ -62,7 +65,10 @@
 		0BB5548C273E6FF900ACAEDE /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		0BB5549F273E76CA00ACAEDE /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
 		0BB554A5273E7B8E00ACAEDE /* OrganizerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizerView.swift; sourceTree = "<group>"; };
-		660AF70E2747FF4800FB35B8 /* TutorialJournal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialJournal.swift; sourceTree = "<group>"; };
+		660AF70E2747FF4800FB35B8 /* TutorialMinimal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialMinimal.swift; sourceTree = "<group>"; };
+		6634A37D2749225200185670 /* TutorialOrganizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialOrganizer.swift; sourceTree = "<group>"; };
+		6634A37F27492C7800185670 /* TutorialPhoneBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialPhoneBook.swift; sourceTree = "<group>"; };
+		666E19BE27480E030050134D /* TutorialJourrnal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialJourrnal.swift; sourceTree = "<group>"; };
 		66B4C5F42743C6E200C0FBE8 /* InfopointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfopointView.swift; sourceTree = "<group>"; };
 		66B4C5F72743CC2D00C0FBE8 /* DoctorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorsView.swift; sourceTree = "<group>"; };
 		66B4C5FD27440DFB00C0FBE8 /* LawyersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawyersView.swift; sourceTree = "<group>"; };
@@ -160,11 +166,11 @@
 		0BB554A4273E770900ACAEDE /* Infopoint */ = {
 			isa = PBXGroup;
 			children = (
+				66B4C5F42743C6E200C0FBE8 /* InfopointView.swift */,
 				66B4C5F72743CC2D00C0FBE8 /* DoctorsView.swift */,
 				66B4C5FD27440DFB00C0FBE8 /* LawyersView.swift */,
 				66E5982A2747AF0200259E3F /* AssociationsView.swift */,
 				66E5982D2747AF0200259E3F /* MedicalServicesView.swift */,
-				66B4C5F42743C6E200C0FBE8 /* InfopointView.swift */,
 				66E5982B2747AF0200259E3F /* DataDoctors.swift */,
 				660AF70D2747FD8D00FB35B8 /* TutoialTot */,
 			);
@@ -174,7 +180,10 @@
 		660AF70D2747FD8D00FB35B8 /* TutoialTot */ = {
 			isa = PBXGroup;
 			children = (
-				660AF70E2747FF4800FB35B8 /* TutorialJournal.swift */,
+				660AF70E2747FF4800FB35B8 /* TutorialMinimal.swift */,
+				666E19BE27480E030050134D /* TutorialJourrnal.swift */,
+				6634A37D2749225200185670 /* TutorialOrganizer.swift */,
+				6634A37F27492C7800185670 /* TutorialPhoneBook.swift */,
 			);
 			path = TutoialTot;
 			sourceTree = "<group>";
@@ -288,7 +297,7 @@
 				66E598342747AF0200259E3F /* MedicalServicesView.swift in Sources */,
 				0BB554A6273E7B8E00ACAEDE /* OrganizerView.swift in Sources */,
 				0BB5548F273E6FF900ACAEDE /* afterusApp.swift in Sources */,
-				660AF70F2747FF4800FB35B8 /* TutorialJournal.swift in Sources */,
+				660AF70F2747FF4800FB35B8 /* TutorialMinimal.swift in Sources */,
 				66E598302747AF0200259E3F /* DataDoctors.swift in Sources */,
 				66B4C5F52743C6E200C0FBE8 /* InfopointView.swift in Sources */,
 				0BB554A0273E76CA00ACAEDE /* JournalView.swift in Sources */,
@@ -299,8 +308,11 @@
 				68F397382742A8490096A8A1 /* HistoryView.swift in Sources */,
 				0B10032F274A442C0042CAAE /* PieChartView.swift in Sources */,
 				0B100332274A490A0042CAAE /* PieSliceView.swift in Sources */,
+				6634A37E2749225200185670 /* TutorialOrganizer.swift in Sources */,
 				68F3973527427E080096A8A1 /* NewNoteView.swift in Sources */,
+				666E19BF27480E030050134D /* TutorialJourrnal.swift in Sources */,
 				68F3973E2742AB780096A8A1 /* ProfileView.swift in Sources */,
+				6634A38027492C7800185670 /* TutorialPhoneBook.swift in Sources */,
 				66B4C5F82743CC2D00C0FBE8 /* DoctorsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

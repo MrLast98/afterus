@@ -8,10 +8,10 @@
 import Foundation
 import SwiftUI
 
+
+
 struct OrganizerView: View {
-    
-    //struct nvStyle : NavigationViewStyle {
-    //}
+    @State private var changeBool = false;
     
     var body: some View {
         VStack{
@@ -19,24 +19,23 @@ struct OrganizerView: View {
                 dayList()
                     .padding(.horizontal)
                     .navigationTitle("ORGANIZER")
-                
             }
-                .frame(height:200)
-                .toolbar{
-                    Button {
-                    } label: {
-                        NavigationLink(destination: ProfileView()){
-                            Image(systemName:"person.crop.circle")
-                        }
+            .frame(height:200)
+            .toolbar{
+                Button {
+                } label: {
+                    NavigationLink(destination: ProfileView()){
+                        Image(systemName:"person.crop.circle")
                     }
                 }
+            }
             PieChartView(
-                values: [1300, 500, 300],
+                values: (changeBool ? [300, 500, 1300] : [1300, 500, 300]),
                 names: ["Rent", "Transport", "Education"],
                 formatter: {value in String(format: "$%.2f", value)},
-                //colors:
-                backgroundColor: Color.white)
-                
+                backgroundColor: Color.white,
+                labelColor: Color.black)
+                .padding(.horizontal)
         }
         
     }

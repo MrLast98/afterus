@@ -36,7 +36,7 @@ struct JournalView: View {
             }
             .padding(.horizontal)
             .navigationTitle("JOURNAL")
-            
+
             .toolbar{
                 Button {
                 } label: {

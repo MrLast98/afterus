@@ -9,47 +9,39 @@ import Foundation
 import SwiftUI
 
 struct JournalView: View {
+    @State private var search = ""
     var body: some View {
         NavigationView {
-            VStack {
-                Spacer()
-                NavigationLink(destination: NewNoteView()) {
-                    makeButtonView(title: "New note")
-                        .foregroundColor(.black)
-                        .background(Color(uiColor: .init(red: 224 / 255, green: 153 / 255, blue: 121 / 255, alpha: 1)))
-                        .cornerRadius(14)
-                }
-                Spacer()
-                NavigationLink(destination: HistoryView()) {
-                    makeButtonView(title: "History")
-                        .foregroundColor(.black)
-                        .background(Color(uiColor: .init(red: 224 / 255, green: 153 / 255, blue: 121 / 255, alpha: 0.9)))
-                        .cornerRadius(14)
-                }
-              
-                Spacer()
-                HStack{
-                    Spacer()
-                    Image("LogoJournalView")
-                        .padding()
-                }
+                        VStack {
+                            Text(" \(search)")
+                                .searchable(text: $search)
+                                .navigationTitle("JOURNAL")
+                                .padding()
+                                .toolbar{
+                                    Button {
+                                    } label: {
+                                        NavigationLink(destination: NewNoteView()){
+                                            Image(systemName:"plus.circle")
+                                        }
+                                        
+                                    }
+                                }
+                            List {
+                                Text("ciao")
+                                Text("ciao")
+                                Text("ciao")
+                            }
+                            Image("LogoHistoryView")
+                            
+                        }
+                  
+            
             }
-            .padding(.horizontal)
-            .navigationTitle("JOURNAL")
+           
 
-            .toolbar{
-                Button {
-                } label: {
-                    NavigationLink(destination: SettingsView()){
-                        Image(systemName:"gearshape")
-                    }
-                    
-                }
-            }
         }
     }
     
-}
 
 
 func makeButtonView(title: String) -> some View {

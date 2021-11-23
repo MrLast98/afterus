@@ -25,61 +25,51 @@ struct ProfileView: View{
                     .padding([.top, .leading, .trailing], 15.0)
                 Divider()
                     .padding(.horizontal)
-                TextField("Tessera Sanitaria", text: $testo6)
+                TextField("Health insurance card", text: $testo6)
                     .padding([.top, .leading, .trailing], 15.0)
                 Divider()
                     .padding(.horizontal)
                 HStack{
-                    Text("Cartella Clinica")
+                   
+                    Text("Medical Records")
                         .bold()
                         .padding()
                     Spacer()
                 }
-                HStack{
-                    ZStack{
-                        RoundedRectangle(cornerRadius: 14)
-                            .foregroundColor(.myColor1)
+                
+                
+                ScrollView(.horizontal){
+                    HStack{
+                        Image(systemName: "plus.app")
                         Image("LogoPdf")
-                        
-                    }
-                    ZStack{
-                        RoundedRectangle(cornerRadius: 14)
-                            .foregroundColor(.myColor1)
                         Image("LogoPdf")
-                        
+                        Image("LogoPdf")
                     }
-                    
-                    
-                    Text("msffds")
-                    Text("msffds")
-                    Text("msffds")
                 }
-            }
-            .padding(.horizontal)
+                            HStack{
+                                Spacer()
+                                    NavigationLink(destination: NewNoteView()) {
+                                        makeButtonView(title: "Save")
+                                            .foregroundColor(.black)
+                                            .background(Color.myColor1)
+                                            .cornerRadius(14)
+                                            .frame(width: 138, height: 45)
+                                            .padding()
+                                    }
+                                }
+            }.padding(.horizontal)
             .navigationTitle("PROFILE")
-            Spacer()
-            HStack{
-                Spacer()
-                
-                NavigationLink(destination: NewNoteView()) {
-                    makeButtonView(title: "Save")
-                        .foregroundColor(.black)
-                        .background(Color.myColor1)
-                        .cornerRadius(14)
-                        .frame(width: 138, height: 45)
-                        .padding()
-                    Spacer()
-                }
-                
-            }
-            Spacer()
-            Image("LogoProfileView")
-                .padding()
-            Spacer()
+            
         }
-        .padding()
+        
+        
     }
+    
 }
+
+
+
+
 
 
 extension Color {

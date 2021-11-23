@@ -8,10 +8,16 @@
 import Foundation
 import SwiftUI
 
-
+enum dataRange: String, CaseIterable, Identifiable {
+    case Monthly
+    case Yearly
+    case YTD
+    
+    var id: String { self.rawValue }
+}
 
 struct OrganizerView: View {
-    @State private var changeBool = false;
+    @State private var selection = dataRange.Monthly;
     
     var body: some View {
         VStack{
@@ -22,32 +28,42 @@ struct OrganizerView: View {
             }
             .frame(height:200)
             .toolbar{
-                Button {
-                } label: {
-                    NavigationLink(destination: ProfileView()){
-                        Image(systemName:"person.crop.circle")
-                    }
-                    
-                }
                 
             }
             PieChartView(
-                values: (changeBool ? [300, 500, 1300] : [1300, 500, 300]),
+                values: returnValues(selection: self.selection),
                 names: ["Rent", "Transport", "Education"],
                 formatter: {value in String(format: "$%.2f", value)},
                 backgroundColor: Color.white,
                 labelColor: Color.black)
                 .padding(.horizontal)
+            Picker("Data Range", selection: $selection) {
+                Text("Monthly").tag(dataRange.Monthly)
+                Text("Yearly").tag(dataRange.Yearly)
+                Text("YTD").tag(dataRange.YTD)
+            }
+            .pickerStyle(.segmented)
+            .padding()
         }
-        
-        
     }
-    
+}
+
+func returnValues(selection: dataRange) -> [Double] {
+    switch selection.rawValue {
+    case "Monthly":
+        return [33, 33, 34]
+    case "Yearly":
+        return [300, 500, 1300]
+    case "YTD":
+        return [1300, 500, 300]
+    default:
+        return [10, 10, 200]
+    }
 }
 
 
 struct dayList: View {
-    @State var list: [String] = [ "5", "12", "31"]
+    @State var list: [String] = [ "5", "6", "11", "12", "30", "31"]
     var body: some View {
         ScrollView (.horizontal, showsIndicators: false) {
             LazyHStack {
@@ -56,7 +72,6 @@ struct dayList: View {
                         .resizable()
                         .scaledToFill()
                         .frame(width: 50, height: 50)
-                        .badge(list)
                 }
             }
         }
@@ -65,6 +80,8 @@ struct dayList: View {
 
 struct OrganizerView_Previews: PreviewProvider {
     static var previews: some View {
-        OrganizerView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        Group {
+            OrganizerView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext).previewInterfaceOrientation(.portrait)
+        }
     }
 }

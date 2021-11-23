@@ -28,19 +28,10 @@ private var doctor = [
     NameDoc(name: "Cicciolina")
 ]
 
-
-
-
-
-
-
-
 struct DoctorsView: View {
     @State private var searchText = ""
     
     var body: some View {
-        
-        
         
         Text("")
             .font(.largeTitle)

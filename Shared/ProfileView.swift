@@ -30,6 +30,7 @@ struct ProfileView: View{
                 Divider()
                     .padding(.horizontal)
                 HStack{
+                   
                     Text("Medical Records")
                         .bold()
                         .padding()
@@ -44,66 +45,31 @@ struct ProfileView: View{
                         Image("LogoPdf")
                         Image("LogoPdf")
                     }
-                    
                 }
-                
-                
-                
-                HStack{
-                    ZStack{
-                        RoundedRectangle(cornerRadius: 14)
-                            .foregroundColor(.myColor1)
-                        Image("LogoPdf")
-                        
-                    }
-                    ZStack{
-                        RoundedRectangle(cornerRadius: 14)
-                            .foregroundColor(.myColor1)
-                        Image("LogoPdf")
-                        
-                    }
-                    
-                    
-                    Text("msffds")
-                    Text("msffds")
-                    Text("msffds")
-                }
-            }
-            .padding(.horizontal)
+                            HStack{
+                                Spacer()
+                                    NavigationLink(destination: NewNoteView()) {
+                                        makeButtonView(title: "Save")
+                                            .foregroundColor(.black)
+                                            .background(Color.myColor1)
+                                            .cornerRadius(14)
+                                            .frame(width: 138, height: 45)
+                                            .padding()
+                                    }
+                                }
+            }.padding(.horizontal)
             .navigationTitle("PROFILE")
-            Spacer()
-            HStack{
-                Spacer()
-                
-                NavigationLink(destination: NewNoteView()) {
-                    makeButtonView(title: "Save")
-                        .foregroundColor(.black)
-                        .background(Color.myColor1)
-                        .cornerRadius(14)
-                        .frame(width: 138, height: 45)
-                        .padding()
-                    Spacer()
-                    NavigationLink(destination: NewNoteView()) {
-                        makeButtonView(title: "Save")
-                            .foregroundColor(.black)
-                            .background(Color.myColor1)
-                            .cornerRadius(14)
-                            .frame(width: 138, height: 45)
-                            .padding()
-                    }
-                    
-                    
-                }
-                
-            }
-            .padding(.horizontal)
-            .navigationTitle("PROFILE")
-            
             
         }
-      
+        
+        
     }
+    
 }
+
+
+
+
 
 
 extension Color {

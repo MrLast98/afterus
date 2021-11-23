@@ -31,7 +31,7 @@ struct JournalView: View {
                                 Text("ciao")
                                 Text("ciao")
                             }
-                            Image("LogoHistoryView")
+                            Image("TutorialImage")
                             
                         }
                   

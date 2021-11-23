@@ -28,6 +28,11 @@ struct ContentView: View {
                     Image(systemName: "book.closed.fill")
                     Text("Infopoint")
                 }
+            SettingsView()
+                .tabItem{
+                    Image(systemName: "gearshape.2.fill")
+                    Text("Settings")
+                }
         }
     }
 }

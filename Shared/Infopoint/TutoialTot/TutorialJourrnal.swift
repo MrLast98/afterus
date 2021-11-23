@@ -17,10 +17,6 @@ struct TutorialJournal: View{
             .multilineTextAlignment(.leading)
             .padding(.top)
         Spacer()
-        
-        
-        
-        
             HStack{
                 
                 Image("TutorialJournal")

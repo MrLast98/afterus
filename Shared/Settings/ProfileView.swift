@@ -79,7 +79,11 @@ extension Color {
     static var myColor2: Color {
         Color(uiColor: .init(red: 195 / 255, green: 166 / 255, blue: 224 / 255, alpha: 1))
     }
+    static var myColor3: Color {
+        Color(uiColor: .init(red: 224 / 255, green: 224 / 255, blue: 132 / 255, alpha: 1))
+    }
 }
+
 
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {

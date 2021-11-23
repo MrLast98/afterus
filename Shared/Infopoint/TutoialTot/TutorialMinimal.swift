@@ -30,9 +30,6 @@ struct TutorialMinimal: View {
                 .padding(.top)
             
             Spacer()
-            
-            
-            
             NavigationLink(destination: TutorialJournal()) {
                 makeButtonView(title: "Tap to Continue")
                     .foregroundColor(.black)
@@ -40,22 +37,8 @@ struct TutorialMinimal: View {
                     .cornerRadius(14)
                     .frame(width: 200, height: 200)
             }
-            
-            
-            
-                
-//            NavigationLink(direction: TutJour1()
-//{
-//                makeButtonView(title: "Tap to Continue")
-//                    .background(Color(uiColor: .init(red: 224 / 255, green: 153 / 255, blue: 121 / 255, alpha: 1)))
-//                    .cornerRadius(14)
-//                    .padding(.bottom)
-//                .frame(width: 220, height: 220)}
                 Spacer()
-                Image("TutorialImage")
-            
-            
-            
+                Image("TutorialImage")    
         }
         .padding(.bottom)
         

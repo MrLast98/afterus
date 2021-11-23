@@ -41,6 +41,7 @@ struct OrganizerView: View {
                 values: returnValues(selection: self.selection),
                 names: ["Rent", "Transport", "Education"],
                 formatter: {value in String(format: "$%.2f", value)},
+                colors: [Color.myColor1, Color.myColor2, Color.myColor3],
                 backgroundColor: Color.white,
                 labelColor: Color.black)
                 .padding(.horizontal)
@@ -64,20 +65,25 @@ func returnValues(selection: dataRange) -> [Double] {
 
 
 struct dayList: View {
-    @State var list: [String] = [ "5", "6", "11", "12", "30", "31"]
+    @State var list: [String] = [ "5", "6", "11", "12", "13", "29", "30", "31", "1", "31"]
+    @State var colorSwitch: Bool = false;
     var body: some View {
         ScrollView (.horizontal, showsIndicators: false) {
             LazyHStack {
                 ForEach(list, id: \.self) {
-                    list in Image(systemName: list + ".circle")
+                    list in Image(systemName: list + ".circle.fill")
                         .resizable()
-                        .scaledToFill()
                         .frame(width: 50, height: 50)
+                        .foregroundColor(Color.myColor2)
+                        .background(Color.white)
+                        .cornerRadius(30)
+                        .shadow(color: Color.gray, radius: 3, x: 0, y: 2)
                 }
             }
         }
     }
 }
+
 
 struct OrganizerView_Previews: PreviewProvider {
     static var previews: some View {

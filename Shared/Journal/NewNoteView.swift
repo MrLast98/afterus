@@ -74,6 +74,5 @@ struct NewNoteView: View{
 struct NewNoteView_Previews: PreviewProvider {
     static var previews: some View {
         NewNoteView()
-        
     }
 }

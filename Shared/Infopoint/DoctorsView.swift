@@ -28,33 +28,24 @@ private var doctor = [
     NameDoc(name: "Cicciolina")
 ]
 
-
-    
-
-
-
-
-
 struct DoctorsView: View {
     @State private var searchText = ""
-
+    
     var body: some View {
         
-        
-     
-    Text("")
+        Text("")
             .font(.largeTitle)
             .fontWeight(.heavy)
             .foregroundColor(Color.black)
             .navigationTitle("Doctors")
-            
+        
             .toolbar{
                 Button {
                 } label: {
                     NavigationLink(destination: ProfileView()){
                         Image(systemName:"person.crop.circle")
                     }
-
+                    
                 }
             }
         
@@ -70,32 +61,32 @@ struct DoctorsView: View {
                 }
             }
         }
-    
-     
+        
+        
+        
+        
+        
+        
+        VStack {
             
-             
-                    
+            Text (" ")
+                .foregroundColor(Color.black)
+                .multilineTextAlignment(.center)
+                .font(.footnote)
             
-            VStack {
-                
-                Text (" ")
-                    .foregroundColor(Color.black)
-                    .multilineTextAlignment(.center)
-                    .font(.footnote)
-                    
-                    .foregroundColor(Color.black)
-                    .searchable(text: $searchText)
+                .foregroundColor(Color.black)
+                .searchable(text: $searchText)
                 .navigationTitle("Search for a Doctor")
-//                 List(lawyers) {
-//                    Text($0.name)
-//                }
-                
+            //                 List(lawyers) {
+            //                    Text($0.name)
+            //                }
             
             
             
-    }
+            
+        }
     }
     
-
-
+    
+    
 }

@@ -24,6 +24,38 @@ struct AssociationsView: View {
     
     var body: some View {
         
+        
+        
+        
+        Text("")
+            .font(.largeTitle)
+            .fontWeight(.heavy)
+            .foregroundColor(Color.black)
+            .navigationTitle("Associations")
+        
+            .toolbar{
+                Button {
+                } label: {
+                    NavigationLink(destination: ProfileView()){
+                        Image(systemName:"person.crop.circle")
+                    }
+                    
+                }
+            }
+        
+        HStack{
+            Spacer()
+            Image("MapAss")
+                .padding()
+            
+        }
+        
+        
+        
+        
+        
+        
+        
         VStack {
             
             
@@ -161,3 +193,8 @@ struct AssociationsView: View {
 
     }
 }
+
+
+
+
+

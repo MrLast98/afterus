@@ -10,68 +10,43 @@
 import Foundation
 import SwiftUI
 
-
-
-
-
-    
-
-
-
-
-
 struct MedicalServicesView: View {
     @State private var searchText = ""
-
+    
     var body: some View {
-        
-        
-
-        
-    Text("")
+        Text("")
             .font(.largeTitle)
             .fontWeight(.heavy)
             .foregroundColor(Color.black)
             .navigationTitle("Medical Services")
-            
+        
             .toolbar{
                 Button {
                 } label: {
                     NavigationLink(destination: ProfileView()){
                         Image(systemName:"person.crop.circle")
                     }
-
+                    
                 }
             }
         
-//        HStack{
-//            Spacer()
-//            Image("MapSan")
-//                .padding()
-//        }
-//        
-      
-     
-            
-             
-                    
-            
-            VStack {
-                
-                Text (" ")
-                    .foregroundColor(Color.black)
-                    .multilineTextAlignment(.center)
-                    .font(.footnote)
-                    
-                    .foregroundColor(Color.black)
-                    .searchable(text: $searchText)
-                .navigationTitle("Search for a Medical Service ")
+        //        HStack{
+        //            Spacer()
+        //            Image("MapSan")
+        //                .padding()
+        //        }
+        //
 
-            }
+        VStack {
+            Text (" ")
+                .foregroundColor(Color.black)
+                .multilineTextAlignment(.center)
+                .font(.footnote)
+                .searchable(text: $searchText)
+                .navigationTitle("Search for a Medical Service ")
+            
+        }
         ScrollView {
-            
-            
-            
             Image("MapSan")
                 .padding()
             makeButtonView(title: "Neuropsichiatra")
@@ -93,7 +68,7 @@ struct MedicalServicesView: View {
                 .background(Color(uiColor: .init(red: 195 / 255, green: 166 / 255, blue: 224 / 255, alpha: 0.50)))
                 .cornerRadius(14)
                 .frame(width: 377)
-                
+            
             
             makeButtonView(title: "Spaccino 1")
                 .background(Color(uiColor: .init(red: 195 / 255, green: 166 / 255, blue: 224 / 255, alpha: 0.50)))
@@ -119,12 +94,8 @@ struct MedicalServicesView: View {
                 .background(Color(uiColor: .init(red: 195 / 255, green: 166 / 255, blue: 224 / 255, alpha: 0.50)))
                 .cornerRadius(14)
                 .frame(width: 377)
-         
         }
-            
-            
-            
     }
-    }  // FINE BODY
-    
+}
+
 

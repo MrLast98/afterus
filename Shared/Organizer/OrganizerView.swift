@@ -30,13 +30,6 @@ struct OrganizerView: View {
             .toolbar{
                 
             }
-            PieChartView(
-                values: returnValues(selection: self.selection),
-                names: ["Rent", "Transport", "Education"],
-                formatter: {value in String(format: "$%.2f", value)},
-                backgroundColor: Color.white,
-                labelColor: Color.black)
-                .padding(.horizontal)
             Picker("Data Range", selection: $selection) {
                 Text("Monthly").tag(dataRange.Monthly)
                 Text("Yearly").tag(dataRange.Yearly)
@@ -44,6 +37,14 @@ struct OrganizerView: View {
             }
             .pickerStyle(.segmented)
             .padding()
+            PieChartView(
+                values: returnValues(selection: self.selection),
+                names: ["Rent", "Transport", "Education"],
+                formatter: {value in String(format: "$%.2f", value)},
+                backgroundColor: Color.white,
+                labelColor: Color.black)
+                .padding(.horizontal)
+            
         }
     }
 }

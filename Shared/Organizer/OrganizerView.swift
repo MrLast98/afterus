@@ -27,7 +27,9 @@ struct OrganizerView: View {
                     NavigationLink(destination: ProfileView()){
                         Image(systemName:"person.crop.circle")
                     }
+                    
                 }
+                
             }
             PieChartView(
                 values: (changeBool ? [300, 500, 1300] : [1300, 500, 300]),
@@ -38,8 +40,11 @@ struct OrganizerView: View {
                 .padding(.horizontal)
         }
         
+        
     }
+    
 }
+
 
 struct dayList: View {
     @State var list: [String] = [ "5", "12", "31"]

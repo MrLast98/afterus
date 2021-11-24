@@ -18,6 +18,7 @@ enum dataRange: String, CaseIterable, Identifiable {
 
 struct OrganizerView: View {
     @State private var selection = dataRange.Monthly;
+    @State private var openModal = false
     
     var body: some View {
         VStack{
@@ -25,11 +26,17 @@ struct OrganizerView: View {
                 dayList()
                     .padding(.horizontal)
                     .navigationTitle("ORGANIZER")
+                    .toolbar{
+                        Button(action: {
+                            openModal.toggle()
+                        }) {
+                            Image(systemName:"plus")
+                        }.sheet(isPresented: $openModal) {
+                            NewEventModal()
+                        }
+                    }
             }
             .frame(height:200)
-            .toolbar{
-                
-            }
             Picker("Data Range", selection: $selection) {
                 Text("Monthly").tag(dataRange.Monthly)
                 Text("Yearly").tag(dataRange.Yearly)
@@ -39,7 +46,7 @@ struct OrganizerView: View {
             .padding()
             PieChartView(
                 values: returnValues(selection: self.selection),
-                names: ["Rent", "Transport", "Education"],
+                names: ["Doctors", "Lawyers", "Medicine"],
                 formatter: {value in String(format: "$%.2f", value)},
                 colors: [Color.myColor1, Color.myColor2, Color.myColor3],
                 backgroundColor: Color.white,

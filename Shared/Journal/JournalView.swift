@@ -12,36 +12,35 @@ struct JournalView: View {
     @State private var search = ""
     var body: some View {
         NavigationView {
-                        VStack {
-                            Text(" \(search)")
-                                .searchable(text: $search)
-                                .navigationTitle("JOURNAL")
-                                .padding()
-                                .toolbar{
-                                    Button {
-                                    } label: {
-                                        NavigationLink(destination: NewNoteView()){
-                                            Image(systemName:"plus.circle")
-                                        }
-                                        
-                                    }
-                                }
-                            List {
-                                Text("ciao")
-                                Text("ciao")
-                                Text("ciao")
+            VStack {
+                Text(" \(search)")
+                    .searchable(text: $search)
+                    .navigationTitle("JOURNAL")
+                    .padding()
+                    .toolbar{
+                        Button {
+                        } label: {
+                            NavigationLink(destination: NewNoteView()){
+                                Image(systemName:"plus")
                             }
-                            Image("TutorialImage")
-                            
                         }
-                  
-            
+                    }
+                List {
+                    Text("ciao")
+                    Text("ciao")
+                    Text("ciao")
+                }
+                Image("TutorialImage")
+                
             }
-           
-
+            
+            
         }
+        
+        
     }
-    
+}
+
 
 
 func makeButtonView(title: String) -> some View {
@@ -49,7 +48,7 @@ func makeButtonView(title: String) -> some View {
         .bold()
         .padding()
         .frame(maxWidth: .infinity, minHeight: 60)
-//        .foregroundColor(.black)
+    //        .foregroundColor(.black)
     //.background(Color(uiColor: .init(red: 224 / 255, green: 153 / 255, blue: 121 / 255, alpha: 1)))
     //        .cornerRadius(14)
 }

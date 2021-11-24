@@ -26,13 +26,6 @@ private var lawyers = [
     NameDoc(name: "Cicciolina")
 ]
 
-
-
-
-
-
-
-
 struct LawyersView: View {
     @State private var searchText = ""
     

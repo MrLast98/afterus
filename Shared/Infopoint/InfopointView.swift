@@ -45,7 +45,6 @@ struct InfopointView: View {
                         .cornerRadius(14)
                 }
                 Spacer()
-                
                 HStack{
                     Spacer()
                     Image("LogoInfoPointView")
@@ -54,16 +53,6 @@ struct InfopointView: View {
             }
             .padding(.horizontal)
             .navigationTitle("INFOPOINT")
-            
-            .toolbar{
-                Button {
-                } label: {
-                    NavigationLink(destination: ProfileView()){
-                        Image(systemName:"person.crop.circle")
-                    }
-                    
-                }
-            }
         }
     }
 }

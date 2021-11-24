@@ -17,31 +17,24 @@ struct JournalView: View {
                     .searchable(text: $search)
                     .navigationTitle("JOURNAL")
                     .padding()
-                    .toolbar{
-                        Button {
-                        } label: {
-                            NavigationLink(destination: NewNoteView()){
-                                Image(systemName:"plus")
-                            }
-                        }
-                    }
                 List {
                     Text("ciao")
                     Text("ciao")
                     Text("ciao")
                 }
                 Image("TutorialImage")
-                
+                    .padding()
             }
-            
-            
+        }.toolbar{
+            Button {
+            } label: {
+                NavigationLink(destination: NewNoteView()){
+                    Image(systemName:"plus")
+                }
+            }
         }
-        
-        
     }
 }
-
-
 
 func makeButtonView(title: String) -> some View {
     Text(title)
@@ -56,6 +49,5 @@ func makeButtonView(title: String) -> some View {
 struct JournalView_Previews: PreviewProvider {
     static var previews: some View {
         JournalView()
-        
     }
 }

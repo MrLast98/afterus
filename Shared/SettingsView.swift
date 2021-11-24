@@ -22,18 +22,28 @@ struct SettingsView: View {
                         .shadow(radius: 10)
                     
                 }.padding()
+                    .navigationTitle("Settings")
+                    .toolbar{
+                        Button {
+                        } label: {
+                            NavigationLink(destination: ProfileView()){
+                                Image(systemName:"person.fill")
+                            }
+                        }
+                    }
+//                Spacer()
+//                makeButtonView(title: "ABOUT US")
+//                    .foregroundColor(Color.myColor2)
+//                    .overlay(RoundedRectangle(cornerRadius: 18).stroke(Color.myColor2, lineWidth: 4))
+//                    .shadow(radius: 10)
+//                    .padding()
                 Spacer()
-                makeButtonView(title: "ABOUT US")
-                    .foregroundColor(Color.myColor2)
-                    .overlay(RoundedRectangle(cornerRadius: 18).stroke(Color.myColor2, lineWidth: 4))
-                    .shadow(radius: 10)
+                Image("LogoAboutUs")
+                Spacer()
+                Text("Copyright © Apple Developer Academy Corso Nicolangelo Protopisani 70, 80146 Napoli (NA) Italy")
+                    .foregroundColor(Color.gray)
                     .padding()
-                Spacer()
-                Image("LogoHistoryView")
-                    .padding(.horizontal)
-                    .navigationTitle("SETTINGS")
             }
-            
         }
     }
 }

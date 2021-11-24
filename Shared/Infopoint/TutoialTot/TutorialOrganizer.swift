@@ -11,7 +11,7 @@ import SwiftUI
 struct TutorialOrganize: View{
     var body: some View {
 
-     Text("Organize")
+     Text("Organizer")
             .font(.largeTitle)
             .fontWeight(.heavy)
             .foregroundColor(Color(uiColor: .init(red: 224 / 255, green: 224 / 255, blue: 132 / 255, alpha: 1)))
@@ -56,7 +56,7 @@ struct TutorialOrganize: View{
 
         Spacer()
         NavigationLink(destination: TutorialPhoneBook()){
-        makeButtonView(title: "Tap to Continua")
+        makeButtonView(title: "Tap to Continue")
             .foregroundColor(Color(uiColor: .init(red: 224 / 255, green: 224 / 255, blue: 132 / 255, alpha: 1)))
         
         }

@@ -26,7 +26,7 @@ struct ContentView: View {
             InfopointView()
                 .tabItem {
                     Image(systemName: "book.closed.fill")
-                    Text("Infopoint")
+                    Text("PhoneBook")
                 }
             SettingsView()
                 .tabItem{

@@ -49,53 +49,45 @@ struct MedicalServicesView: View {
         ScrollView {
             Image("MapSan")
                 .padding()
-            makeButtonView(title: "Neuropsichiatra")
+            makeButtonView(title: "Medical Service n.1")
                 .background(Color(uiColor: .init(red: 195 / 255, green: 166 / 255, blue: 224 / 255, alpha: 0.50)))
                 .cornerRadius(14)
                 .frame(width: 377)
             
-            makeButtonView(title: "Psicologo")
+            makeButtonView(title: "Medical Service n.2")
                 .background(Color(uiColor: .init(red: 195 / 255, green: 166 / 255, blue: 224 / 255, alpha: 0.50)))
                 .cornerRadius(14)
                 .frame(width: 377)
             
-            makeButtonView(title: "Pornostar")
+            makeButtonView(title: "Medical Service n.3")
                 .background(Color(uiColor: .init(red: 195 / 255, green: 166 / 255, blue: 224 / 255, alpha: 0.50)))
                 .cornerRadius(14)
                 .frame(width: 377)
             
-            makeButtonView(title: "Gigolò")
+            makeButtonView(title: "Medical Service n.4")
                 .background(Color(uiColor: .init(red: 195 / 255, green: 166 / 255, blue: 224 / 255, alpha: 0.50)))
                 .cornerRadius(14)
                 .frame(width: 377)
             
             
-            makeButtonView(title: "Spaccino 1")
+            makeButtonView(title: "Medical Service n.5")
                 .background(Color(uiColor: .init(red: 195 / 255, green: 166 / 255, blue: 224 / 255, alpha: 0.50)))
                 .cornerRadius(14)
                 .frame(width: 377)
             
-            makeButtonView(title: "Spaccino 2")
+            makeButtonView(title: "Medical Service n.6")
                 .background(Color(uiColor: .init(red: 195 / 255, green: 166 / 255, blue: 224 / 255, alpha: 0.50)))
                 .cornerRadius(14)
                 .frame(width: 377)
             
-            makeButtonView(title: "Pornosite")
+            makeButtonView(title: "Medical Service n.7")
                 .background(Color(uiColor: .init(red: 195 / 255, green: 166 / 255, blue: 224 / 255, alpha: 0.50)))
                 .cornerRadius(14)
                 .frame(width: 377)
             
-            makeButtonView(title: "Mi so rotto il cazzo")
-                .background(Color(uiColor: .init(red: 195 / 255, green: 166 / 255, blue: 224 / 255, alpha: 0.50)))
-                .cornerRadius(14)
-                .frame(width: 377)
-            
-            makeButtonView(title: "Non so cosa scrivere")
-                .background(Color(uiColor: .init(red: 195 / 255, green: 166 / 255, blue: 224 / 255, alpha: 0.50)))
-                .cornerRadius(14)
-                .frame(width: 377)
-        }
+      
     }
 }
 
 
+}

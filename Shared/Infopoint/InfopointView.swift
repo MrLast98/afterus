@@ -52,7 +52,7 @@ struct InfopointView: View {
                 }
             }
             .padding(.horizontal)
-            .navigationTitle("INFOPOINT")
+            .navigationTitle("PHONEBOOK")
         }
     }
 }

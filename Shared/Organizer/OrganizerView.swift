@@ -24,7 +24,6 @@ struct OrganizerView: View {
         VStack{
             NavigationView{
                 dayList()
-                    .padding(.horizontal)
                     .navigationTitle("ORGANIZER")
                     .toolbar{
                         Button(action: {

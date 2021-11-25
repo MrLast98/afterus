@@ -31,14 +31,11 @@ struct SettingsView: View {
                             }
                         }
                     }
-//                Spacer()
-//                makeButtonView(title: "ABOUT US")
-//                    .foregroundColor(Color.myColor2)
-//                    .overlay(RoundedRectangle(cornerRadius: 18).stroke(Color.myColor2, lineWidth: 4))
-//                    .shadow(radius: 10)
-//                    .padding()
                 Spacer()
-                Image("LogoAboutUs")
+                Image("ImageAboutUs")
+                    .resizable()
+                    .padding()
+                    .frame(width: 380, height: 350, alignment: .center)
                 Spacer()
                 Text("Copyright © Apple Developer Academy Corso Nicolangelo Protopisani 70, 80146 Napoli (NA) Italy")
                     .foregroundColor(Color.gray)

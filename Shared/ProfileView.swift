@@ -30,14 +30,12 @@ struct ProfileView: View{
                 Divider()
                     .padding(.horizontal)
                 HStack{
-                   
+                    
                     Text("Medical Records")
                         .bold()
                         .padding()
                     Spacer()
                 }
-                
-                
                 ScrollView(.horizontal){
                     HStack{
                         Image(systemName: "plus.app")
@@ -46,31 +44,20 @@ struct ProfileView: View{
                         Image("LogoPdf")
                     }
                 }
-                            HStack{
-                                Spacer()
-                                    NavigationLink(destination: NewNoteView()) {
-                                        makeButtonView(title: "Save")
-                                            .foregroundColor(.black)
-                                            .background(Color.myColor1)
-                                            .cornerRadius(14)
-                                            .frame(width: 138, height: 45)
-                                            .padding()
-                                    }
-                                }
+//                HStack{
+//                    Spacer()
+//                    makeButtonView(title: "Save")
+//                        .foregroundColor(.black)
+//                        .background(Color.myColor1)
+//                        .cornerRadius(14)
+//                        .frame(width: 138, height: 45)
+//                        .padding()
+//                }
             }.padding(.horizontal)
-            .navigationTitle("PROFILE")
-            
+                .navigationTitle("PROFILE")
         }
-        
-        
     }
-    
 }
-
-
-
-
-
 
 extension Color {
     static var myColor1: Color {
@@ -83,7 +70,6 @@ extension Color {
         Color(uiColor: .init(red: 224 / 255, green: 224 / 255, blue: 132 / 255, alpha: 1))
     }
 }
-
 
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {

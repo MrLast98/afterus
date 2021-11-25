@@ -61,7 +61,6 @@ struct NewEventModal: View {
         Button("Save") {
             dismiss()
         }
-        .font(.title)
         .padding()
         .foregroundColor(Color.white)
         .background(Color.myColor2)

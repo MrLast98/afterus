@@ -1,32 +1,19 @@
 //
-//  Associations.swift
+//  Medical Services.swift
 //  afterus
 //
 //  Created by Rodolfo Pigna on 18/11/21.
 //
 
+
+
 import Foundation
 import SwiftUI
 
-
-
-
-
-
-
-
-
-
-
 struct AssociationsView: View {
-    @State private var searchText = " "
-   
+    @State private var searchText = ""
     
     var body: some View {
-        
-        
-        
-        
         Text("")
             .font(.largeTitle)
             .fontWeight(.heavy)
@@ -43,158 +30,64 @@ struct AssociationsView: View {
                 }
             }
         
-        HStack{
-            Spacer()
-            Image("MapAss")
-                .padding()
-            
-        }
-        
-        
-        
-        
-        
-        
-        
+        //        HStack{
+        //            Spacer()
+        //            Image("MapSan")
+        //                .padding()
+        //        }
+        //
+
         VStack {
-            
-            
-            Text("")
-                .font(.largeTitle)
-                .fontWeight(.heavy)
-                .foregroundColor(Color.black)
-                .navigationTitle("Associations")
-            
-                .toolbar{
-                    Button {
-                    } label: {
-                        NavigationLink(destination: ProfileView()){
-                            Image(systemName:"person.crop.circle")
-                        }
-                        
-                    }
-                }
-            //
-            //        HStack{
-            //            Spacer()
-            //            Image("MapAss")
-            //                .padding()
-            //
-            //        }
-            //
-            
-            
-            
-            
-            
-            
-            
             Text (" ")
                 .foregroundColor(Color.black)
                 .multilineTextAlignment(.center)
                 .font(.footnote)
-            
-                .foregroundColor(Color.black)
                 .searchable(text: $searchText)
-                .navigationTitle("Search for a Associations ")
+                .navigationTitle("Search for a Association ")
+            
+        }
+        ScrollView {
+            Image("MapSan")
+                .padding()
+            makeButtonView(title: "Association n.1")
+                .background(Color(uiColor: .init(red: 195 / 255, green: 166 / 255, blue: 224 / 255, alpha: 0.50)))
+                .cornerRadius(14)
+                .frame(width: 377)
+            
+            makeButtonView(title: "Association n.2")
+                .background(Color(uiColor: .init(red: 195 / 255, green: 166 / 255, blue: 224 / 255, alpha: 0.50)))
+                .cornerRadius(14)
+                .frame(width: 377)
+            
+            makeButtonView(title: "Association n.3")
+                .background(Color(uiColor: .init(red: 195 / 255, green: 166 / 255, blue: 224 / 255, alpha: 0.50)))
+                .cornerRadius(14)
+                .frame(width: 377)
+            
+            makeButtonView(title: "Association n.4")
+                .background(Color(uiColor: .init(red: 195 / 255, green: 166 / 255, blue: 224 / 255, alpha: 0.50)))
+                .cornerRadius(14)
+                .frame(width: 377)
             
             
-            //
-            //
-            //            Image("MapAss")
-            //                .padding()
-            //
+            makeButtonView(title: "Association n.5")
+                .background(Color(uiColor: .init(red: 195 / 255, green: 166 / 255, blue: 224 / 255, alpha: 0.50)))
+                .cornerRadius(14)
+                .frame(width: 377)
             
+            makeButtonView(title: "Association n.6")
+                .background(Color(uiColor: .init(red: 195 / 255, green: 166 / 255, blue: 224 / 255, alpha: 0.50)))
+                .cornerRadius(14)
+                .frame(width: 377)
             
-            //            List {
-            //                Image("MapAss")
-            //                    .padding()
-            //                Text("Psicologo")
-            //                Text("Neuropsichiatra")
-            //                Text("cazzi e mazzi")
-            //                Text("Bottari")
-            //                Text("dijewbfpiuefb")
-            //                Text("Psicologo")
-            //                Text("Neuropsichiatra")
-            //                Text("cazzi e mazzi")
-            //                Text("Bottari")
-            //
-            //
-         
+            makeButtonView(title: "Association n.7")
+                .background(Color(uiColor: .init(red: 195 / 255, green: 166 / 255, blue: 224 / 255, alpha: 0.50)))
+                .cornerRadius(14)
+                .frame(width: 377)
             
-            
-            ScrollView{
-                
-                
-                
-                Image("MapAss")
-                    .padding()
-                makeButtonView(title: "Neuropsichiatra")
-                    .background(Color(uiColor: .init(red: 195 / 255, green: 166 / 255, blue: 224 / 255, alpha: 0.50)))
-                    .cornerRadius(14)
-                    .frame(width: 377)
-                
-                makeButtonView(title: "Psicologo")
-                    .background(Color(uiColor: .init(red: 195 / 255, green: 166 / 255, blue: 224 / 255, alpha: 0.50)))
-                    .cornerRadius(14)
-                    .frame(width: 377)
-                
-                makeButtonView(title: "Pornostar")
-                    .background(Color(uiColor: .init(red: 195 / 255, green: 166 / 255, blue: 224 / 255, alpha: 0.50)))
-                    .cornerRadius(14)
-                    .frame(width: 377)
-                
-                makeButtonView(title: "Gigolò")
-                    .background(Color(uiColor: .init(red: 195 / 255, green: 166 / 255, blue: 224 / 255, alpha: 0.50)))
-                    .cornerRadius(14)
-                    .frame(width: 377)
-                    
-                
-                makeButtonView(title: "Spaccino 1")
-                    .background(Color(uiColor: .init(red: 195 / 255, green: 166 / 255, blue: 224 / 255, alpha: 0.50)))
-                    .cornerRadius(14)
-                    .frame(width: 377)
-                
-                makeButtonView(title: "Spaccino 2")
-                    .background(Color(uiColor: .init(red: 195 / 255, green: 166 / 255, blue: 224 / 255, alpha: 0.50)))
-                    .cornerRadius(14)
-                    .frame(width: 377)
-                
-                makeButtonView(title: "Pornosite")
-                    .background(Color(uiColor: .init(red: 195 / 255, green: 166 / 255, blue: 224 / 255, alpha: 0.50)))
-                    .cornerRadius(14)
-                    .frame(width: 377)
-                
-                makeButtonView(title: "Mi so rotto il cazzo")
-                    .background(Color(uiColor: .init(red: 195 / 255, green: 166 / 255, blue: 224 / 255, alpha: 0.50)))
-                    .cornerRadius(14)
-                    .frame(width: 377)
-                
-                makeButtonView(title: "Non so cosa scrivere")
-                    .background(Color(uiColor: .init(red: 195 / 255, green: 166 / 255, blue: 224 / 255, alpha: 0.50)))
-                    .cornerRadius(14)
-                    .frame(width: 377)
-             
-            }
-            
-            
-            
-            
-    
-}
-
-
-
-
-
-
-
-
-
+          
+        }
     }
 }
-
-
-
 
 

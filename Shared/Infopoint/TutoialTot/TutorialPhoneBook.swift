@@ -55,12 +55,12 @@ struct TutorialPhoneBook: View{
             .frame(width: 150, height: 150)
 
         Spacer()
-        NavigationLink(destination: SettingsView() ){
+     
         makeButtonView(title: "Done")
             .foregroundColor(Color(uiColor: .init(red: 195 / 255, green: 166 / 255, blue: 224 / 255, alpha: 1)))
-        
+      
             
-        }
+        
 
   
         
